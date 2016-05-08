@@ -1,0 +1,52 @@
+
+2015-10-23 17:12:30,821 [30] ERROR - *****Unhandled error occured in application*****
+Exception Type: 
+System.Threading.ThreadAbortExceptionException: Thread was being aborted.
+Stack Trace: 
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   at System.Web.HttpResponse.Redirect(String url)
+   at Collaboration.Web.UI.UserControl.UC_TicketsNew.Update() in e:\Activities\Infozzle\From Rahul on July 10, 2015\RiverMount\collaboration.web.ui\UserControl\UC_TicketsNew.ascx.cs:line 288Additonal Info: 
+Sender: /Tickets/Tickets.aspx
+
+2015-10-23 17:13:14,447 [29] ERROR - *****Unhandled error occured in application*****
+Exception Type: 
+System.Threading.ThreadAbortExceptionException: Thread was being aborted.
+Stack Trace: 
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   at System.Web.HttpResponse.Redirect(String url)
+   at Collaboration.Web.UI.UserControl.UC_TicketsNew.Update() in e:\Activities\Infozzle\From Rahul on July 10, 2015\RiverMount\collaboration.web.ui\UserControl\UC_TicketsNew.ascx.cs:line 288Additonal Info: 
+Sender: /Tickets/Tickets.aspx
+
+2015-10-23 17:13:25,289 [30] ERROR - *****Unhandled error occured in application*****
+Exception Type: 
+System.Threading.ThreadAbortExceptionException: Thread was being aborted.
+Stack Trace: 
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   at System.Web.HttpResponse.Redirect(String url)
+   at Collaboration.Web.UI.UserControl.UC_TicketsNew.Update() in e:\Activities\Infozzle\From Rahul on July 10, 2015\RiverMount\collaboration.web.ui\UserControl\UC_TicketsNew.ascx.cs:line 288Additonal Info: 
+Sender: /Tickets/Tickets.aspx
+
+2015-10-23 17:17:07,514 [26] ERROR - *****Unhandled error occured in application*****
+Exception Type: 
+System.Threading.ThreadAbortExceptionException: Thread was being aborted.
+Stack Trace: 
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   at System.Web.HttpResponse.Redirect(String url)
+   at Collaboration.Web.UI.UserControl.UC_TicketsNew.Update() in e:\Activities\Infozzle\From Rahul on July 10, 2015\RiverMount\collaboration.web.ui\UserControl\UC_TicketsNew.ascx.cs:line 288Additonal Info: 
+Sender: /Tickets/Tickets.aspx

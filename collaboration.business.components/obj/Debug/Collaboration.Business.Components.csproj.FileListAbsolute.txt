@@ -1,0 +1,22 @@
+F:\HNW Projects\Shashank\22-06-15(Latest RiverMount)\Rivermount\Collaboration.Business.Components\bin\Debug\Collaboration.Business.Components.dll
+F:\HNW Projects\Shashank\22-06-15(Latest RiverMount)\Rivermount\Collaboration.Business.Components\bin\Debug\Collaboration.Business.Components.pdb
+F:\HNW Projects\Shashank\22-06-15(Latest RiverMount)\Rivermount\Collaboration.Business.Components\bin\Debug\Collaboration.Business.Entities.dll
+F:\HNW Projects\Shashank\22-06-15(Latest RiverMount)\Rivermount\Collaboration.Business.Components\bin\Debug\Collaboration.Data.dll
+F:\HNW Projects\Shashank\22-06-15(Latest RiverMount)\Rivermount\Collaboration.Business.Components\bin\Debug\Collaboration.Business.Entities.pdb
+F:\HNW Projects\Shashank\22-06-15(Latest RiverMount)\Rivermount\Collaboration.Business.Components\bin\Debug\Collaboration.Data.pdb
+F:\HNW Projects\Shashank\22-06-15(Latest RiverMount)\Rivermount\Collaboration.Business.Components\obj\Debug\Collaboration.Business.Components.csprojResolveAssemblyReference.cache
+F:\HNW Projects\Shashank\22-06-15(Latest RiverMount)\Rivermount\Collaboration.Business.Components\obj\Debug\Collaboration.Business.Components.Resources.resources
+F:\HNW Projects\Shashank\22-06-15(Latest RiverMount)\Rivermount\Collaboration.Business.Components\obj\Debug\Collaboration.Business.Components.csproj.GenerateResource.Cache
+F:\HNW Projects\Shashank\22-06-15(Latest RiverMount)\Rivermount\Collaboration.Business.Components\obj\Debug\Collaboration.Business.Components.dll
+F:\HNW Projects\Shashank\22-06-15(Latest RiverMount)\Rivermount\Collaboration.Business.Components\obj\Debug\Collaboration.Business.Components.pdb
+E:\Activities\Infozzle\From Rahul on July 10, 2015\RiverMount\Collaboration.Business.Components\bin\Debug\Collaboration.Business.Components.dll
+E:\Activities\Infozzle\From Rahul on July 10, 2015\RiverMount\Collaboration.Business.Components\bin\Debug\Collaboration.Business.Components.pdb
+E:\Activities\Infozzle\From Rahul on July 10, 2015\RiverMount\Collaboration.Business.Components\bin\Debug\Collaboration.Business.Entities.dll
+E:\Activities\Infozzle\From Rahul on July 10, 2015\RiverMount\Collaboration.Business.Components\bin\Debug\Collaboration.Data.dll
+E:\Activities\Infozzle\From Rahul on July 10, 2015\RiverMount\Collaboration.Business.Components\bin\Debug\Collaboration.Business.Entities.pdb
+E:\Activities\Infozzle\From Rahul on July 10, 2015\RiverMount\Collaboration.Business.Components\bin\Debug\Collaboration.Data.pdb
+E:\Activities\Infozzle\From Rahul on July 10, 2015\RiverMount\Collaboration.Business.Components\obj\Debug\Collaboration.Business.Components.csprojResolveAssemblyReference.cache
+E:\Activities\Infozzle\From Rahul on July 10, 2015\RiverMount\Collaboration.Business.Components\obj\Debug\Collaboration.Business.Components.Resources.resources
+E:\Activities\Infozzle\From Rahul on July 10, 2015\RiverMount\Collaboration.Business.Components\obj\Debug\Collaboration.Business.Components.csproj.GenerateResource.Cache
+E:\Activities\Infozzle\From Rahul on July 10, 2015\RiverMount\Collaboration.Business.Components\obj\Debug\Collaboration.Business.Components.dll
+E:\Activities\Infozzle\From Rahul on July 10, 2015\RiverMount\Collaboration.Business.Components\obj\Debug\Collaboration.Business.Components.pdb

@@ -1,0 +1,83 @@
+
+2015-10-20 19:32:22,324 [11] ERROR - *****Unhandled error occured in application*****
+Exception Type: 
+System.ArgumentOutOfRangeExceptionException: 'ddlAssignTo' has a SelectedValue which is invalid because it does not exist in the list of items.
+Parameter name: value
+Stack Trace: 
+   at System.Web.UI.WebControls.ListControl.PerformDataBinding(IEnumerable dataSource)
+   at System.Web.UI.WebControls.ListControl.OnDataBinding(EventArgs e)
+   at System.Web.UI.WebControls.ListControl.PerformSelect()
+   at System.Web.UI.WebControls.BaseDataBoundControl.DataBind()
+   at Collaboration.Web.UI.UserControl.UC_DynamicOrderDetails.FillDropDown(DropDownList ddlList, Array dataSource, String optionalstr, Boolean bindDefaultValue) in e:\Activities\Infozzle\From Rahul on July 10, 2015\RiverMount\collaboration.web.ui\UserControl\UC_DynamicOrderDetails.ascx.cs:line 285
+   at Collaboration.Web.UI.UserControl.UC_DynamicOrderDetails.SetDynamicSection(OrderDetails_Result order, Int32 userID, Int32 roleID) in e:\Activities\Infozzle\From Rahul on July 10, 2015\RiverMount\collaboration.web.ui\UserControl\UC_DynamicOrderDetails.ascx.cs:line 237
+   at Collaboration.Web.UI.Orders.ViewOrderDetails.SetDynamicSection(OrderDetails_Result order) in e:\Activities\Infozzle\From Rahul on July 10, 2015\RiverMount\collaboration.web.ui\Orders\ViewOrderDetails.aspx.cs:line 172
+   at Collaboration.Web.UI.Orders.ViewOrderDetails.btnSave_Click(Object sender, EventArgs e) in e:\Activities\Infozzle\From Rahul on July 10, 2015\RiverMount\collaboration.web.ui\Orders\ViewOrderDetails.aspx.cs:line 238Additonal Info: 
+Sender: /Orders/ViewOrderDetails.aspx?OrderID=2156
+
+2015-10-20 19:37:40,588 [11] ERROR - *****Unhandled error occured in application*****
+Exception Type: 
+System.ArgumentOutOfRangeExceptionException: 'ddlAssignTo' has a SelectedValue which is invalid because it does not exist in the list of items.
+Parameter name: value
+Stack Trace: 
+   at System.Web.UI.WebControls.ListControl.PerformDataBinding(IEnumerable dataSource)
+   at System.Web.UI.WebControls.ListControl.OnDataBinding(EventArgs e)
+   at System.Web.UI.WebControls.ListControl.PerformSelect()
+   at System.Web.UI.WebControls.BaseDataBoundControl.DataBind()
+   at Collaboration.Web.UI.UserControl.UC_DynamicOrderDetails.FillDropDown(DropDownList ddlList, Array dataSource, String optionalstr, Boolean bindDefaultValue) in e:\Activities\Infozzle\From Rahul on July 10, 2015\RiverMount\collaboration.web.ui\UserControl\UC_DynamicOrderDetails.ascx.cs:line 285
+   at Collaboration.Web.UI.UserControl.UC_DynamicOrderDetails.SetDynamicSection(OrderDetails_Result order, Int32 userID, Int32 roleID) in e:\Activities\Infozzle\From Rahul on July 10, 2015\RiverMount\collaboration.web.ui\UserControl\UC_DynamicOrderDetails.ascx.cs:line 237
+   at Collaboration.Web.UI.Orders.ViewOrderDetails.SetDynamicSection(OrderDetails_Result order) in e:\Activities\Infozzle\From Rahul on July 10, 2015\RiverMount\collaboration.web.ui\Orders\ViewOrderDetails.aspx.cs:line 172
+   at Collaboration.Web.UI.Orders.ViewOrderDetails.btnSave_Click(Object sender, EventArgs e) in e:\Activities\Infozzle\From Rahul on July 10, 2015\RiverMount\collaboration.web.ui\Orders\ViewOrderDetails.aspx.cs:line 238Additonal Info: 
+Sender: /Orders/ViewOrderDetails.aspx?OrderID=2163
+
+2015-10-20 19:41:47,078 [11] ERROR - *****Unhandled error occured in application*****
+Exception Type: 
+System.ArgumentOutOfRangeExceptionException: 'ddlAssignTo' has a SelectedValue which is invalid because it does not exist in the list of items.
+Parameter name: value
+Stack Trace: 
+   at System.Web.UI.WebControls.ListControl.PerformDataBinding(IEnumerable dataSource)
+   at System.Web.UI.WebControls.ListControl.OnDataBinding(EventArgs e)
+   at System.Web.UI.WebControls.ListControl.PerformSelect()
+   at System.Web.UI.WebControls.BaseDataBoundControl.DataBind()
+   at Collaboration.Web.UI.UserControl.UC_DynamicOrderDetails.FillDropDown(DropDownList ddlList, Array dataSource, String optionalstr, Boolean bindDefaultValue) in e:\Activities\Infozzle\From Rahul on July 10, 2015\RiverMount\collaboration.web.ui\UserControl\UC_DynamicOrderDetails.ascx.cs:line 285
+   at Collaboration.Web.UI.UserControl.UC_DynamicOrderDetails.SetDynamicSection(OrderDetails_Result order, Int32 userID, Int32 roleID) in e:\Activities\Infozzle\From Rahul on July 10, 2015\RiverMount\collaboration.web.ui\UserControl\UC_DynamicOrderDetails.ascx.cs:line 237
+   at Collaboration.Web.UI.Orders.ViewOrderDetails.SetDynamicSection(OrderDetails_Result order) in e:\Activities\Infozzle\From Rahul on July 10, 2015\RiverMount\collaboration.web.ui\Orders\ViewOrderDetails.aspx.cs:line 172
+   at Collaboration.Web.UI.Orders.ViewOrderDetails.btnSave_Click(Object sender, EventArgs e) in e:\Activities\Infozzle\From Rahul on July 10, 2015\RiverMount\collaboration.web.ui\Orders\ViewOrderDetails.aspx.cs:line 238Additonal Info: 
+Sender: /Orders/ViewOrderDetails.aspx?OrderID=2164
+
+2015-10-20 19:54:46,668 [14] ERROR - *****Unhandled error occured in application*****
+Exception Type: 
+System.NullReferenceExceptionException: Object reference not set to an instance of an object.
+Stack Trace: 
+   at Collaboration.Web.UI.UserControl.UC_EditOrder.SetValues(OrderDetails_Result orderDetails) in e:\Activities\Infozzle\From Rahul on July 10, 2015\RiverMount\collaboration.web.ui\UserControl\UC_EditOrder.ascx.cs:line 194
+   at Collaboration.Web.UI.Orders.ViewOrderDetails.btnSave_Click(Object sender, EventArgs e) in e:\Activities\Infozzle\From Rahul on July 10, 2015\RiverMount\collaboration.web.ui\Orders\ViewOrderDetails.aspx.cs:line 278Additonal Info: 
+Sender: /Orders/ViewOrderDetails.aspx?OrderID=2165
+
+2015-10-20 19:58:29,317 [24] ERROR - *****Unhandled error occured in application*****
+Exception Type: 
+System.ArgumentOutOfRangeExceptionException: 'ddlAssignTo' has a SelectedValue which is invalid because it does not exist in the list of items.
+Parameter name: value
+Stack Trace: 
+   at System.Web.UI.WebControls.ListControl.PerformDataBinding(IEnumerable dataSource)
+   at System.Web.UI.WebControls.ListControl.OnDataBinding(EventArgs e)
+   at System.Web.UI.WebControls.ListControl.PerformSelect()
+   at System.Web.UI.WebControls.BaseDataBoundControl.DataBind()
+   at Collaboration.Web.UI.UserControl.UC_DynamicOrderDetails.FillDropDown(DropDownList ddlList, Array dataSource, String optionalstr, Boolean bindDefaultValue) in e:\Activities\Infozzle\From Rahul on July 10, 2015\RiverMount\collaboration.web.ui\UserControl\UC_DynamicOrderDetails.ascx.cs:line 285
+   at Collaboration.Web.UI.UserControl.UC_DynamicOrderDetails.SetDynamicSection(OrderDetails_Result order, Int32 userID, Int32 roleID) in e:\Activities\Infozzle\From Rahul on July 10, 2015\RiverMount\collaboration.web.ui\UserControl\UC_DynamicOrderDetails.ascx.cs:line 237
+   at Collaboration.Web.UI.Orders.ViewOrderDetails.SetDynamicSection(OrderDetails_Result order) in e:\Activities\Infozzle\From Rahul on July 10, 2015\RiverMount\collaboration.web.ui\Orders\ViewOrderDetails.aspx.cs:line 172
+   at Collaboration.Web.UI.Orders.ViewOrderDetails.btnSave_Click(Object sender, EventArgs e) in e:\Activities\Infozzle\From Rahul on July 10, 2015\RiverMount\collaboration.web.ui\Orders\ViewOrderDetails.aspx.cs:line 238Additonal Info: 
+Sender: /Orders/ViewOrderDetails.aspx?OrderID=2166
+
+2015-10-20 21:47:42,218 [58] ERROR - *****Unhandled error occured in application*****
+Exception Type: 
+System.ArgumentOutOfRangeExceptionException: 'ddlAssignTo' has a SelectedValue which is invalid because it does not exist in the list of items.
+Parameter name: value
+Stack Trace: 
+   at System.Web.UI.WebControls.ListControl.PerformDataBinding(IEnumerable dataSource)
+   at System.Web.UI.WebControls.ListControl.OnDataBinding(EventArgs e)
+   at System.Web.UI.WebControls.ListControl.PerformSelect()
+   at System.Web.UI.WebControls.BaseDataBoundControl.DataBind()
+   at Collaboration.Web.UI.UserControl.UC_DynamicOrderDetails.FillDropDown(DropDownList ddlList, Array dataSource, String optionalstr, Boolean bindDefaultValue) in e:\Activities\Infozzle\From Rahul on July 10, 2015\RiverMount\collaboration.web.ui\UserControl\UC_DynamicOrderDetails.ascx.cs:line 285
+   at Collaboration.Web.UI.UserControl.UC_DynamicOrderDetails.SetDynamicSection(OrderDetails_Result order, Int32 userID, Int32 roleID) in e:\Activities\Infozzle\From Rahul on July 10, 2015\RiverMount\collaboration.web.ui\UserControl\UC_DynamicOrderDetails.ascx.cs:line 237
+   at Collaboration.Web.UI.Orders.ViewOrderDetails.SetDynamicSection(OrderDetails_Result order) in e:\Activities\Infozzle\From Rahul on July 10, 2015\RiverMount\collaboration.web.ui\Orders\ViewOrderDetails.aspx.cs:line 172
+   at Collaboration.Web.UI.Orders.ViewOrderDetails.btnSave_Click(Object sender, EventArgs e) in e:\Activities\Infozzle\From Rahul on July 10, 2015\RiverMount\collaboration.web.ui\Orders\ViewOrderDetails.aspx.cs:line 238Additonal Info: 
+Sender: /Orders/ViewOrderDetails.aspx?OrderID=2167

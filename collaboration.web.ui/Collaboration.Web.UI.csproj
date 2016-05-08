@@ -1,0 +1,911 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{33E3CA75-E317-4554-A540-5C60CD41105E}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Collaboration.Web.UI</RootNamespace>
+    <AssemblyName>Collaboration.Web.UI</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=3.5.60623.0, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="CodeCarvings.Piczard">
+      <HintPath>C:\Program Files (x86)\CodeCarvings\Piczard V1\Bin\CodeCarvings.Piczard.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Data.v14.2, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\DevExpress.Data.v14.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v14.2.Core, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\DevExpress.Printing.v14.2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.RichEdit.v14.2.Core, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\DevExpress.RichEdit.v14.2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Web.ASPxThemes.v14.2, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\DevExpress.Web.ASPxThemes.v14.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Web.ASPxTreeList.v14.2, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\DevExpress.Web.ASPxTreeList.v14.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Web.v14.2, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\DevExpress.Web.v14.2.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.13.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Data.Edm">
+      <HintPath>..\packages\Microsoft.Data.Edm.5.2.0\lib\net40\Microsoft.Data.Edm.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.VisualStudio.QualityTools.UnitTestFramework.11.0.50727.1\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Data.Services.Client" />
+    <Reference Include="System.Web.DataVisualization" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="About.aspx" />
+    <Content Include="AccessDenied.html" />
+    <Content Include="Account\ChangePassword.aspx" />
+    <Content Include="Account\EditProfile.aspx" />
+    <Content Include="Account\Login.aspx" />
+    <Content Include="Account\Profile.aspx" />
+    <Content Include="Account\ProfileImage.aspx" />
+    <Content Include="Account\UserManagement.aspx" />
+    <Content Include="Admin\createorder.aspx" />
+    <Content Include="Admin\Customers.aspx" />
+    <Content Include="Admin\ImportCustomers.aspx" />
+    <Content Include="Admin\SampleStatus.aspx" />
+    <Content Include="App_Data\MailTemplates\CADConfirmation.txt" />
+    <Content Include="App_Data\MailTemplates\CADResponse.txt" />
+    <Content Include="App_Data\MailTemplates\CADThreeRequestsIsue.txt" />
+    <Content Include="App_Data\MailTemplates\PasswordReset.txt" />
+    <Content Include="App_Themes\Office2010Silver\Chart\Loading.gif" />
+    <Content Include="App_Themes\Office2010Silver\Chart\styles.css" />
+    <Content Include="App_Themes\Office2010Silver\Editors\caChallengeImageBack.png" />
+    <Content Include="App_Themes\Office2010Silver\Editors\edtBtnBack.png" />
+    <Content Include="App_Themes\Office2010Silver\Editors\edtBtnHBack.png" />
+    <Content Include="App_Themes\Office2010Silver\Editors\edtBtnPBack.png" />
+    <Content Include="App_Themes\Office2010Silver\Editors\edtDropDownBtnBack.png" />
+    <Content Include="App_Themes\Office2010Silver\Editors\edtDropDownBtnDisabledBack.png" />
+    <Content Include="App_Themes\Office2010Silver\Editors\edtDropDownBtnHBack.png" />
+    <Content Include="App_Themes\Office2010Silver\Editors\edtDropDownBtnPBack.png" />
+    <Content Include="App_Themes\Office2010Silver\Editors\edtProgressBack.png" />
+    <Content Include="App_Themes\Office2010Silver\Editors\edtProgressIndicatorBack.png" />
+    <Content Include="App_Themes\Office2010Silver\Editors\edtSpinDecBtnBack.png" />
+    <Content Include="App_Themes\Office2010Silver\Editors\edtSpinDecBtnDisabledBack.png" />
+    <Content Include="App_Themes\Office2010Silver\Editors\edtSpinIncBtnBack.png" />
+    <Content Include="App_Themes\Office2010Silver\Editors\edtSpinIncBtnDisabledBack.png" />
+    <Content Include="App_Themes\Office2010Silver\Editors\edtSpinIncDecBtnHBack.png" />
+    <Content Include="App_Themes\Office2010Silver\Editors\edtTokenBoxTokenBackground.png" />
+    <Content Include="App_Themes\Office2010Silver\Editors\edtTrackBarBarHighlightH.gif" />
+    <Content Include="App_Themes\Office2010Silver\Editors\edtTrackBarBarHighlightV.gif" />
+    <Content Include="App_Themes\Office2010Silver\Editors\edtTrackBarDoubleLargeTickH.gif" />
+    <Content Include="App_Themes\Office2010Silver\Editors\edtTrackBarDoubleLargeTickV.gif" />
+    <Content Include="App_Themes\Office2010Silver\Editors\edtTrackBarDoubleSmallTickH.gif" />
+    <Content Include="App_Themes\Office2010Silver\Editors\edtTrackBarDoubleSmallTickV.gif" />
+    <Content Include="App_Themes\Office2010Silver\Editors\edtTrackBarLargeTickH.gif" />
+    <Content Include="App_Themes\Office2010Silver\Editors\edtTrackBarLargeTickV.gif" />
+    <Content Include="App_Themes\Office2010Silver\Editors\edtTrackBarSmallTickH.gif" />
+    <Content Include="App_Themes\Office2010Silver\Editors\edtTrackBarSmallTickV.gif" />
+    <Content Include="App_Themes\Office2010Silver\Editors\edtTrackBarTrackH.gif" />
+    <Content Include="App_Themes\Office2010Silver\Editors\edtTrackBarTrackV.gif" />
+    <Content Include="App_Themes\Office2010Silver\Editors\lbHeaderBack.png" />
+    <Content Include="App_Themes\Office2010Silver\Editors\sprite.css" />
+    <Content Include="App_Themes\Office2010Silver\Editors\sprite.png" />
+    <Content Include="App_Themes\Office2010Silver\Editors\styles.css" />
+    <Content Include="App_Themes\Office2010Silver\GridView\gvHeaderBack.png" />
+    <Content Include="App_Themes\Office2010Silver\GridView\gvHoverBack.png" />
+    <Content Include="App_Themes\Office2010Silver\GridView\gvPagerPanelBack.png" />
+    <Content Include="App_Themes\Office2010Silver\GridView\gvTitleBack.png" />
+    <Content Include="App_Themes\Office2010Silver\GridView\Loading.gif" />
+    <Content Include="App_Themes\Office2010Silver\GridView\sprite.css" />
+    <Content Include="App_Themes\Office2010Silver\GridView\sprite.png" />
+    <Content Include="App_Themes\Office2010Silver\GridView\styles.css" />
+    <Content Include="App_Themes\Office2010Silver\PivotGrid\GrandTotalBack.png" />
+    <Content Include="App_Themes\Office2010Silver\PivotGrid\HeaderBack.png" />
+    <Content Include="App_Themes\Office2010Silver\PivotGrid\HeaderHoverBack.png" />
+    <Content Include="App_Themes\Office2010Silver\PivotGrid\Loading.gif" />
+    <Content Include="App_Themes\Office2010Silver\PivotGrid\PagerBack.png" />
+    <Content Include="App_Themes\Office2010Silver\PivotGrid\pcHBack.png" />
+    <Content Include="App_Themes\Office2010Silver\PivotGrid\sprite.css" />
+    <Content Include="App_Themes\Office2010Silver\PivotGrid\sprite.png" />
+    <Content Include="App_Themes\Office2010Silver\PivotGrid\styles.css" />
+    <Content Include="App_Themes\Office2010Silver\PivotGrid\TitleBack.png" />
+    <Content Include="App_Themes\Office2010Silver\PivotGrid\TotalBack.png" />
+    <Content Include="App_Themes\Office2010Silver\PivotGrid\tvNodeLoading.gif" />
+    <Content Include="App_Themes\Office2010Silver\TreeList\CssImages\HeaderBack.png" />
+    <Content Include="App_Themes\Office2010Silver\TreeList\CssImages\PagerPanelBack.png" />
+    <Content Include="App_Themes\Office2010Silver\TreeList\CssImages\TitleBack.png" />
+    <Content Include="App_Themes\Office2010Silver\TreeList\Loading.gif" />
+    <Content Include="App_Themes\Office2010Silver\TreeList\sprite.css" />
+    <Content Include="App_Themes\Office2010Silver\TreeList\sprite.png" />
+    <Content Include="App_Themes\Office2010Silver\TreeList\styles.css" />
+    <Content Include="App_Themes\Office2010Silver\Web\DocumentViewerSprite.css" />
+    <Content Include="App_Themes\Office2010Silver\Web\DocumentViewerSprite.png" />
+    <Content Include="App_Themes\Office2010Silver\Web\dvPagerPanelBack.png" />
+    <Content Include="App_Themes\Office2010Silver\Web\edtBtnBack.png" />
+    <Content Include="App_Themes\Office2010Silver\Web\edtBtnHBack.png" />
+    <Content Include="App_Themes\Office2010Silver\Web\fmFileCheck.png" />
+    <Content Include="App_Themes\Office2010Silver\Web\fmSplitterSeparator.gif" />
+    <Content Include="App_Themes\Office2010Silver\Web\HESprite.css" />
+    <Content Include="App_Themes\Office2010Silver\Web\HESprite.png" />
+    <Content Include="App_Themes\Office2010Silver\Web\igLoading.gif" />
+    <Content Include="App_Themes\Office2010Silver\Web\igNavBtnsBack.png" />
+    <Content Include="App_Themes\Office2010Silver\Web\isLoading.gif" />
+    <Content Include="App_Themes\Office2010Silver\Web\Loading.gif" />
+    <Content Include="App_Themes\Office2010Silver\Web\mItemBack.png" />
+    <Content Include="App_Themes\Office2010Silver\Web\mItemHBack.png" />
+    <Content Include="App_Themes\Office2010Silver\Web\mItemSBack.png" />
+    <Content Include="App_Themes\Office2010Silver\Web\mScrollBack.png" />
+    <Content Include="App_Themes\Office2010Silver\Web\mScrollHBack.png" />
+    <Content Include="App_Themes\Office2010Silver\Web\mSubItemGutterBack.png" />
+    <Content Include="App_Themes\Office2010Silver\Web\mSubItemHBack.png" />
+    <Content Include="App_Themes\Office2010Silver\Web\mSubItemRtlGutterBack.png" />
+    <Content Include="App_Themes\Office2010Silver\Web\mSubItemSepBack.gif" />
+    <Content Include="App_Themes\Office2010Silver\Web\nbHBack.png" />
+    <Content Include="App_Themes\Office2010Silver\Web\nbIHBack.png" />
+    <Content Include="App_Themes\Office2010Silver\Web\nbISBack.png" />
+    <Content Include="App_Themes\Office2010Silver\Web\pcFBack.png" />
+    <Content Include="App_Themes\Office2010Silver\Web\pcHBack.png" />
+    <Content Include="App_Themes\Office2010Silver\Web\pDropDownButtonBack.png" />
+    <Content Include="App_Themes\Office2010Silver\Web\pDropDownButtonDisabledBack.png" />
+    <Content Include="App_Themes\Office2010Silver\Web\pDropDownButtonHoverBack.png" />
+    <Content Include="App_Themes\Office2010Silver\Web\pDropDownButtonPressedBack.png" />
+    <Content Include="App_Themes\Office2010Silver\Web\rBack.png" />
+    <Content Include="App_Themes\Office2010Silver\Web\rcMapImage.png" />
+    <Content Include="App_Themes\Office2010Silver\Web\rFileTabBack.png" />
+    <Content Include="App_Themes\Office2010Silver\Web\rFileTabHoverBack.png" />
+    <Content Include="App_Themes\Office2010Silver\Web\rFileTabPressedBack.png" />
+    <Content Include="App_Themes\Office2010Silver\Web\rGroupSepBack.png" />
+    <Content Include="App_Themes\Office2010Silver\Web\rItemHBack.png" />
+    <Content Include="App_Themes\Office2010Silver\Web\rItemSBack.png" />
+    <Content Include="App_Themes\Office2010Silver\Web\rpHBack.png" />
+    <Content Include="App_Themes\Office2010Silver\Web\rTabHoverBack.png" />
+    <Content Include="App_Themes\Office2010Silver\Web\splHSepHBack.png" />
+    <Content Include="App_Themes\Office2010Silver\Web\splResizingPointer.gif" />
+    <Content Include="App_Themes\Office2010Silver\Web\splVSepHBack.png" />
+    <Content Include="App_Themes\Office2010Silver\Web\sprite.css" />
+    <Content Include="App_Themes\Office2010Silver\Web\sprite.png" />
+    <Content Include="App_Themes\Office2010Silver\Web\SSSprite.css" />
+    <Content Include="App_Themes\Office2010Silver\Web\SSSprite.png" />
+    <Content Include="App_Themes\Office2010Silver\Web\styles.css" />
+    <Content Include="App_Themes\Office2010Silver\Web\tiFBBack.png" />
+    <Content Include="App_Themes\Office2010Silver\Web\tvNodeLoading.gif" />
+    <Content Include="App_Themes\Office2010Silver\Web\ucButtonBack.png" />
+    <Content Include="App_Themes\Office2010Silver\Web\ucButtonHoverBack.png" />
+    <Content Include="App_Themes\Office2010Silver\Web\ucButtonPressedBack.png" />
+    <Content Include="App_Themes\Office2010Silver\Web\ucProgressBack.png" />
+    <Content Include="App_Themes\Office2010Silver\Web\ucProgressIndicatorBack.png" />
+    <Content Include="App_Themes\Office2010Silver\XtraReports\pageBottomBorder.png" />
+    <Content Include="App_Themes\Office2010Silver\XtraReports\pageLeftBorder.png" />
+    <Content Include="App_Themes\Office2010Silver\XtraReports\pageRightBorder.png" />
+    <Content Include="App_Themes\Office2010Silver\XtraReports\pageTopBorder.png" />
+    <Content Include="App_Themes\Office2010Silver\XtraReports\sprite.css" />
+    <Content Include="App_Themes\Office2010Silver\XtraReports\sprite.png" />
+    <Content Include="App_Themes\Office2010Silver\XtraReports\styles.css" />
+    <Content Include="assets\data-tables\DT_bootstrap.css" />
+    <Content Include="assets\data-tables\DT_bootstrap.js" />
+    <Content Include="assets\data-tables\images\sort_asc.png" />
+    <Content Include="assets\data-tables\images\sort_both.png" />
+    <Content Include="assets\data-tables\images\sort_desc.png" />
+    <Content Include="assets\data-tables\jquery.dataTables.js" />
+    <Content Include="assets\data-tables\jquery.dataTablesold.js" />
+    <Content Include="assets\fancybox\blank.gif" />
+    <Content Include="assets\fancybox\fancybox_loading%402x.gif" />
+    <Content Include="assets\fancybox\fancybox_loading.gif" />
+    <Content Include="assets\fancybox\fancybox_overlay.png" />
+    <Content Include="assets\fancybox\fancybox_sprite%402x.png" />
+    <Content Include="assets\fancybox\fancybox_sprite.png" />
+    <Content Include="assets\fancybox\helpers\fancybox_buttons.png" />
+    <Content Include="assets\fancybox\helpers\jquery.fancybox-buttons.css" />
+    <Content Include="assets\fancybox\helpers\jquery.fancybox-buttons.js" />
+    <Content Include="assets\fancybox\helpers\jquery.fancybox-media.js" />
+    <Content Include="assets\fancybox\helpers\jquery.fancybox-thumbs.css" />
+    <Content Include="assets\fancybox\helpers\jquery.fancybox-thumbs.js" />
+    <Content Include="assets\fancybox\jquery.fancybox.css" />
+    <Content Include="assets\fancybox\jquery.fancybox.js" />
+    <Content Include="assets\fancybox\jquery.fancybox.pack.js" />
+    <Content Include="assets\font-awesome\css\font-awesome-ie7.css" />
+    <Content Include="assets\font-awesome\css\font-awesome-ie7.min.css" />
+    <Content Include="assets\font-awesome\css\font-awesome.css" />
+    <Content Include="assets\font-awesome\css\font-awesome.min.css" />
+    <Content Include="assets\font-awesome\font\fontawesome-webfont.svg" />
+    <Content Include="DasbhoardMaster.Master" />
+    <Content Include="Error.aspx" />
+    <Content Include="img\404_icon.png" />
+    <Content Include="img\500_icon.png" />
+    <Content Include="img\arrow-up.png" />
+    <Content Include="img\attach.png" />
+    <Content Include="img\attach_document.png" />
+    <Content Include="img\avatar-mini.jpg" />
+    <Content Include="img\avatar-mini2.jpg" />
+    <Content Include="img\avatar-mini3.jpg" />
+    <Content Include="img\avatar-mini4.jpg" />
+    <Content Include="img\avatar1.jpg" />
+    <Content Include="img\avatar1_small.jpg" />
+    <Content Include="img\chart-texture.jpg" />
+    <Content Include="img\chat-avatar.jpg" />
+    <Content Include="img\chat-avatar2.jpg" />
+    <Content Include="img\checkbox\check-off.png" />
+    <Content Include="img\checkbox\check-on.png" />
+    <Content Include="img\checkbox\radio-off.png" />
+    <Content Include="img\checkbox\radio-on.png" />
+    <Content Include="img\Curve to Fit.jpg" />
+    <Content Include="img\Curved.jpg" />
+    <Content Include="img\customSelect-arrow.gif" />
+    <Content Include="img\file-search\ai.png" />
+    <Content Include="img\file-search\doc.png" />
+    <Content Include="img\file-search\email.png" />
+    <Content Include="img\file-search\eps.png" />
+    <Content Include="img\file-search\jpg.png" />
+    <Content Include="img\file-search\pdf.png" />
+    <Content Include="img\file-search\ppt.png" />
+    <Content Include="img\file-search\psd.png" />
+    <Content Include="img\file-search\rss.png" />
+    <Content Include="img\file-search\xls.png" />
+    <Content Include="img\file-search\zip.png" />
+    <Content Include="img\FileUploadIcon.png" />
+    <Content Include="img\flags\de.png" />
+    <Content Include="img\flags\es.png" />
+    <Content Include="img\flags\fr.png" />
+    <Content Include="img\flags\ru.png" />
+    <Content Include="img\flags\us.png" />
+    <Content Include="img\follower-avatar.jpg" />
+    <Content Include="img\Follows.jpg" />
+    <Content Include="img\gallery\1.jpg" />
+    <Content Include="img\gallery\2.jpg" />
+    <Content Include="img\gallery\3.jpg" />
+    <Content Include="img\gallery\4.jpg" />
+    <Content Include="img\gallery\5.jpg" />
+    <Content Include="img\gallery\6.jpg" />
+    <Content Include="img\gallery\7.jpg" />
+    <Content Include="img\images.jpg" />
+    <Content Include="img\images.png" />
+    <Content Include="img\left-arrow.png" />
+    <Content Include="img\lock-bg.jpg" />
+    <Content Include="img\logo_river.png" />
+    <Content Include="img\mail-avatar.jpg" />
+    <Content Include="img\mask-square.png" />
+    <Content Include="img\mask.png" />
+    <Content Include="img\nav-expand.png" />
+    <Content Include="img\pro-ac-1.png" />
+    <Content Include="img\pro-ac-2.png" />
+    <Content Include="img\product-list\pro-1.jpg" />
+    <Content Include="img\product-list\pro-thumb-1.jpg" />
+    <Content Include="img\product-list\pro-thumb-2.jpg" />
+    <Content Include="img\product-list\pro-thumb-3.jpg" />
+    <Content Include="img\product-list\pro-thumb-big.jpg" />
+    <Content Include="img\product-list\pro1.jpg" />
+    <Content Include="img\product-list\pro2.jpg" />
+    <Content Include="img\product-list\pro3.jpg" />
+    <Content Include="img\product1.jpg" />
+    <Content Include="img\product2.png" />
+    <Content Include="img\product3.png" />
+    <Content Include="img\profile-avatar.jpg" />
+    <Content Include="img\ProfileImage.jpg" />
+    <Content Include="img\right-arrow.png" />
+    <Content Include="img\ring.jpg" />
+    <Content Include="img\search-icon.jpg" />
+    <Content Include="img\sm-img-1.jpg" />
+    <Content Include="img\sm-img-2.jpg" />
+    <Content Include="img\sm-img-3.jpg" />
+    <Content Include="img\Straight.jpg" />
+    <Content Include="img\vector-lab.jpg" />
+    <Content Include="js\bootstrap.js" />
+    <Content Include="js\bootstrap.min.js" />
+    <Content Include="js\chosen\chosen-sprite%402x.png" />
+    <Content Include="js\chosen\chosen-sprite.png" />
+    <Content Include="js\chosen\chosen.css" />
+    <Content Include="js\chosen\chosen.jquery.js" />
+    <Content Include="js\chosen\chosen.jquery.min.js" />
+    <Content Include="js\chosen\chosen.min.css" />
+    <Content Include="js\chosen\chosen.proto.js" />
+    <Content Include="js\chosen\chosen.proto.min.js" />
+    <Content Include="js\chosen\docsupport\chosen.png" />
+    <Content Include="js\chosen\docsupport\oss-credit.png" />
+    <Content Include="js\chosen\docsupport\prism.css" />
+    <Content Include="js\chosen\docsupport\prism.js" />
+    <Content Include="js\chosen\docsupport\style.css" />
+    <Content Include="js\common-scripts.js" />
+    <Content Include="js\editable-table.js" />
+    <Content Include="js\editable-tableold.js" />
+    <Content Include="js\jquery-1.8.3.min.js" />
+    <Content Include="js\jquery.datepick.js" />
+    <Content Include="js\jquery.dcjqaccordion.2.7.js" />
+    <Content Include="js\jquery.dcjqaccordion.2.7.min.js" />
+    <Content Include="js\jquery.js" />
+    <Content Include="js\jquery.MultiFile.js" />
+    <Content Include="js\jquery.nicescroll.js" />
+    <Content Include="js\jquery.plugin.js" />
+    <Content Include="js\jquery.scrollTo.min.js" />
+    <Content Include="js\pixlr.js" />
+    <Content Include="js\respond.min.js" />
+    <Content Include="js\zebra_datepicker.js" />
+    <Content Include="Messages\Messages.aspx" />
+    <Content Include="Common\Image.aspx" />
+    <Content Include="Orders\CancelOrder.aspx" />
+    <Content Include="Orders\ConfirmCAD.aspx" />
+    <Content Include="Admin\Priorities.aspx" />
+    <Content Include="Admin\RingTypes.aspx" />
+    <Content Include="Orders\CreateOrder.aspx" />
+    <Content Include="Admin\FingerMeasurements.aspx" />
+    <Content Include="Orders\GenericDownload.aspx" />
+    <Content Include="Admin\Metals.aspx" />
+    <Content Include="Admin\ModelTypes.aspx" />
+    <Content Include="Admin\ProcessTypes.aspx" />
+    <Content Include="Orders\ViewOrder.aspx" />
+    <Content Include="Orders\ViewOrderDetails.aspx" />
+    <Content Include="Scripts\jquery.MultiFile.js" />
+    <Content Include="Styles\bootstrap-reset.css" />
+    <Content Include="Styles\bootstrap.css" />
+    <Content Include="Styles\bootstrap.min.css" />
+    <Content Include="Styles\calendar-disabled.png" />
+    <Content Include="Styles\calendar.png" />
+    <Content Include="Styles\font-awesome.css" />
+    <Content Include="Styles\jquery.datepick.css" />
+    <Content Include="Styles\owl.carousel.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="Styles\style-responsive.css" />
+    <Content Include="Styles\style.css" />
+    <Content Include="Styles\table-responsive.css" />
+    <Content Include="App_Data\MailTemplates\UserRegistration.txt" />
+    <Content Include="Styles\themes.png" />
+    <Content Include="Test.aspx" />
+    <Content Include="Tickets\Tickets.aspx" />
+    <Content Include="Tracking\ReturnedSamples.aspx" />
+    <Content Include="Tracking\TrackSamples.aspx" />
+    <Content Include="UserControl\UC_CompareCAD.ascx" />
+    <Content Include="UserControl\UC_CreateTicket.ascx" />
+    <Content Include="UserControl\UC_DynamicOrderDetails.ascx" />
+    <Content Include="UserControl\UC_Tickets.ascx" />
+    <Content Include="UserControl\UC_ViewOrderDetails.ascx" />
+    <Content Include="UserControl\UC_ChangePassword.ascx" />
+    <Content Include="UserControl\UC_EditOrder.ascx" />
+    <Content Include="UserControl\UC_Messages.ascx" />
+    <Content Include="UserControl\UC_EditProfile.ascx" />
+    <Content Include="UserControl\Footer.ascx" />
+    <Content Include="UserControl\UC_Header.ascx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\EditProfile.aspx.cs">
+      <DependentUpon>EditProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\EditProfile.aspx.designer.cs">
+      <DependentUpon>EditProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Profile.aspx.cs">
+      <DependentUpon>Profile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Profile.aspx.designer.cs">
+      <DependentUpon>Profile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ProfileImage.aspx.cs">
+      <DependentUpon>ProfileImage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ProfileImage.aspx.designer.cs">
+      <DependentUpon>ProfileImage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\UserManagement.aspx.cs">
+      <DependentUpon>UserManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\UserManagement.aspx.designer.cs">
+      <DependentUpon>UserManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\createorder.aspx.cs">
+      <DependentUpon>createorder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\createorder.aspx.designer.cs">
+      <DependentUpon>createorder.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Customers.aspx.cs">
+      <DependentUpon>Customers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Customers.aspx.designer.cs">
+      <DependentUpon>Customers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ImportCustomers.aspx.cs">
+      <DependentUpon>ImportCustomers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ImportCustomers.aspx.designer.cs">
+      <DependentUpon>ImportCustomers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\SampleStatus.aspx.cs">
+      <DependentUpon>SampleStatus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\SampleStatus.aspx.designer.cs">
+      <DependentUpon>SampleStatus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\Common.cs" />
+    <Compile Include="Common\BaseMasterPage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CommonMaster.Master.cs">
+      <DependentUpon>CommonMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CommonMaster.Master.designer.cs">
+      <DependentUpon>CommonMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="DasbhoardMaster.Master.cs">
+      <DependentUpon>DasbhoardMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DasbhoardMaster.Master.designer.cs">
+      <DependentUpon>DasbhoardMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Error.aspx.cs">
+      <DependentUpon>Error.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Error.aspx.designer.cs">
+      <DependentUpon>Error.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Messages\Messages.aspx.cs">
+      <DependentUpon>Messages.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Messages\Messages.aspx.designer.cs">
+      <DependentUpon>Messages.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\Image.aspx.cs">
+      <DependentUpon>Image.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\Image.aspx.designer.cs">
+      <DependentUpon>Image.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Orders\CancelOrder.aspx.cs">
+      <DependentUpon>CancelOrder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Orders\CancelOrder.aspx.designer.cs">
+      <DependentUpon>CancelOrder.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Orders\ConfirmCAD.aspx.cs">
+      <DependentUpon>ConfirmCAD.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Orders\ConfirmCAD.aspx.designer.cs">
+      <DependentUpon>ConfirmCAD.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Priorities.aspx.cs">
+      <DependentUpon>Priorities.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Priorities.aspx.designer.cs">
+      <DependentUpon>Priorities.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\RingTypes.aspx.cs">
+      <DependentUpon>RingTypes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\RingTypes.aspx.designer.cs">
+      <DependentUpon>RingTypes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Orders\CreateOrder.aspx.cs">
+      <DependentUpon>CreateOrder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Orders\CreateOrder.aspx.designer.cs">
+      <DependentUpon>CreateOrder.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\FingerMeasurements.aspx.cs">
+      <DependentUpon>FingerMeasurements.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\FingerMeasurements.aspx.designer.cs">
+      <DependentUpon>FingerMeasurements.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Orders\GenericDownload.aspx.cs">
+      <DependentUpon>GenericDownload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Orders\GenericDownload.aspx.designer.cs">
+      <DependentUpon>GenericDownload.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Metals.aspx.cs">
+      <DependentUpon>Metals.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Metals.aspx.designer.cs">
+      <DependentUpon>Metals.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ModelTypes.aspx.cs">
+      <DependentUpon>ModelTypes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ModelTypes.aspx.designer.cs">
+      <DependentUpon>ModelTypes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ProcessTypes.aspx.cs">
+      <DependentUpon>ProcessTypes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ProcessTypes.aspx.designer.cs">
+      <DependentUpon>ProcessTypes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Orders\ViewOrder.aspx.cs">
+      <DependentUpon>ViewOrder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Orders\ViewOrder.aspx.designer.cs">
+      <DependentUpon>ViewOrder.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Orders\ViewOrderDetails.aspx.cs">
+      <DependentUpon>ViewOrderDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Orders\ViewOrderDetails.aspx.designer.cs">
+      <DependentUpon>ViewOrderDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Test.aspx.cs">
+      <DependentUpon>Test.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Test.aspx.designer.cs">
+      <DependentUpon>Test.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Tickets\Tickets.aspx.cs">
+      <DependentUpon>Tickets.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tickets\Tickets.aspx.designer.cs">
+      <DependentUpon>Tickets.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Tracking\ReturnedSamples.aspx.cs">
+      <DependentUpon>ReturnedSamples.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tracking\ReturnedSamples.aspx.designer.cs">
+      <DependentUpon>ReturnedSamples.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Tracking\TrackSamples.aspx.cs">
+      <DependentUpon>TrackSamples.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tracking\TrackSamples.aspx.designer.cs">
+      <DependentUpon>TrackSamples.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\UC_CompareCAD.ascx.cs">
+      <DependentUpon>UC_CompareCAD.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControl\UC_CompareCAD.ascx.designer.cs">
+      <DependentUpon>UC_CompareCAD.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\UC_CreateTicket.ascx.cs">
+      <DependentUpon>UC_CreateTicket.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControl\UC_CreateTicket.ascx.designer.cs">
+      <DependentUpon>UC_CreateTicket.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\UC_DynamicOrderDetails.ascx.cs">
+      <DependentUpon>UC_DynamicOrderDetails.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControl\UC_DynamicOrderDetails.ascx.designer.cs">
+      <DependentUpon>UC_DynamicOrderDetails.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\UC_Tickets.ascx.cs">
+      <DependentUpon>UC_Tickets.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControl\UC_Tickets.ascx.designer.cs">
+      <DependentUpon>UC_Tickets.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\UC_ViewOrderDetails.ascx.cs">
+      <DependentUpon>UC_ViewOrderDetails.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControl\UC_ViewOrderDetails.ascx.designer.cs">
+      <DependentUpon>UC_ViewOrderDetails.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\UC_ChangePassword.ascx.cs">
+      <DependentUpon>UC_ChangePassword.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControl\UC_ChangePassword.ascx.designer.cs">
+      <DependentUpon>UC_ChangePassword.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\UC_EditOrder.ascx.cs">
+      <DependentUpon>UC_EditOrder.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControl\UC_EditOrder.ascx.designer.cs">
+      <DependentUpon>UC_EditOrder.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\UC_Messages.ascx.cs">
+      <DependentUpon>UC_Messages.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControl\UC_Messages.ascx.designer.cs">
+      <DependentUpon>UC_Messages.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\UC_EditProfile.ascx.cs">
+      <DependentUpon>UC_EditProfile.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControl\UC_EditProfile.ascx.designer.cs">
+      <DependentUpon>UC_EditProfile.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\Footer.ascx.cs">
+      <DependentUpon>Footer.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControl\Footer.ascx.designer.cs">
+      <DependentUpon>Footer.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\UC_Header.ascx.cs">
+      <DependentUpon>UC_Header.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControl\UC_Header.ascx.designer.cs">
+      <DependentUpon>UC_Header.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Utilities\ExceptionUtility.cs" />
+    <Compile Include="Utilities\ImageUtility.cs" />
+    <Compile Include="Utilities\MailUtility.cs" />
+    <Compile Include="Utilities\MessageUtility.cs" />
+    <Compile Include="Common\BasePage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Utilities\PageUtility.cs" />
+    <Compile Include="Utilities\TestMoq.cs" />
+    <Compile Include="Utilities\TicketUtility.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Web.sitemap" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Account\Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Collaboration.Business.Components\Collaboration.Business.Components.csproj">
+      <Project>{AC94B47D-369A-4549-85EF-14849859E641}</Project>
+      <Name>Collaboration.Business.Components</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Collaboration.Business.Entities\Collaboration.Business.Entities.csproj">
+      <Project>{406E7A94-0F8B-467A-8784-4615C867283A}</Project>
+      <Name>Collaboration.Business.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Logging\Logging.csproj">
+      <Project>{419FD999-F768-49E9-983B-5214EF610EEA}</Project>
+      <Name>Logging</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="log4net.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resource.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Themes\Office2010Silver\ASPxButton.skin" />
+    <Content Include="App_Themes\Office2010Silver\ASPxButtonEdit.skin" />
+    <Content Include="App_Themes\Office2010Silver\ASPxCalendar.skin" />
+    <Content Include="App_Themes\Office2010Silver\ASPxCaptcha.skin" />
+    <Content Include="App_Themes\Office2010Silver\ASPxCheckBox.skin" />
+    <Content Include="App_Themes\Office2010Silver\ASPxCheckBoxList.skin" />
+    <Content Include="App_Themes\Office2010Silver\ASPxColorEdit.skin" />
+    <Content Include="App_Themes\Office2010Silver\ASPxComboBox.skin" />
+    <Content Include="App_Themes\Office2010Silver\ASPxDateEdit.skin" />
+    <Content Include="App_Themes\Office2010Silver\ASPxDropDownEdit.skin" />
+    <Content Include="App_Themes\Office2010Silver\ASPxFilterControl.skin" />
+    <Content Include="App_Themes\Office2010Silver\ASPxGridLookup.skin" />
+    <Content Include="App_Themes\Office2010Silver\ASPxGridView.skin" />
+    <Content Include="App_Themes\Office2010Silver\ASPxHyperLink.skin" />
+    <Content Include="App_Themes\Office2010Silver\ASPxLabel.skin" />
+    <Content Include="App_Themes\Office2010Silver\ASPxListBox.skin" />
+    <Content Include="App_Themes\Office2010Silver\ASPxMemo.skin" />
+    <Content Include="App_Themes\Office2010Silver\ASPxProgressBar.skin" />
+    <Content Include="App_Themes\Office2010Silver\ASPxRadioButton.skin" />
+    <Content Include="App_Themes\Office2010Silver\ASPxRadioButtonList.skin" />
+    <Content Include="App_Themes\Office2010Silver\ASPxSpinEdit.skin" />
+    <Content Include="App_Themes\Office2010Silver\ASPxTextBox.skin" />
+    <Content Include="App_Themes\Office2010Silver\ASPxTimeEdit.skin" />
+    <Content Include="App_Themes\Office2010Silver\ASPxTokenBox.skin" />
+    <Content Include="App_Themes\Office2010Silver\ASPxTrackBar.skin" />
+    <Content Include="App_Themes\Office2010Silver\ASPxTreeList.skin" />
+    <Content Include="App_Themes\Office2010Silver\ASPxValidationSummary.skin" />
+    <Content Include="App_Themes\Office2010Silver\Parameters.config" />
+    <None Include="assets\data-tables\.DS_Store" />
+    <None Include="assets\font-awesome\.DS_Store" />
+    <None Include="assets\font-awesome\font\fontawesome-webfont.eot" />
+    <None Include="assets\font-awesome\font\fontawesome-webfont.ttf" />
+    <None Include="assets\font-awesome\font\fontawesome-webfont.woff" />
+    <None Include="assets\font-awesome\font\FontAwesome.otf" />
+    <None Include="assets\font-awesome\less\bootstrap.less" />
+    <None Include="assets\font-awesome\less\core.less" />
+    <None Include="assets\font-awesome\less\extras.less" />
+    <None Include="assets\font-awesome\less\font-awesome-ie7.less" />
+    <None Include="assets\font-awesome\less\font-awesome.less" />
+    <None Include="assets\font-awesome\less\icons.less" />
+    <None Include="assets\font-awesome\less\mixins.less" />
+    <None Include="assets\font-awesome\less\path.less" />
+    <None Include="assets\font-awesome\less\variables.less" />
+    <None Include="assets\font-awesome\scss\font-awesome-ie7.scss" />
+    <None Include="assets\font-awesome\scss\font-awesome.scss" />
+    <None Include="assets\font-awesome\scss\_bootstrap.scss" />
+    <None Include="assets\font-awesome\scss\_core.scss" />
+    <None Include="assets\font-awesome\scss\_extras.scss" />
+    <None Include="assets\font-awesome\scss\_icons.scss" />
+    <None Include="assets\font-awesome\scss\_mixins.scss" />
+    <None Include="assets\font-awesome\scss\_path.scss" />
+    <None Include="assets\font-awesome\scss\_variables.scss" />
+    <Content Include="CommonMaster.Master" />
+    <None Include="img\.DS_Store" />
+    <None Include="img\file-search\.DS_Store" />
+    <None Include="img\gallery\.DS_Store" />
+    <None Include="Properties\PublishProfiles\63bits.pubxml" />
+    <None Include="Properties\PublishProfiles\63BITSHosting.pubxml" />
+    <None Include="Properties\PublishProfiles\Local.pubxml" />
+    <None Include="Properties\PublishProfiles\Profile1.pubxml" />
+    <None Include="Properties\PublishProfiles\rivermount.63bits.com.pubxml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>22960</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost/Collaboration.Web.UI</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

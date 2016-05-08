@@ -1,0 +1,50 @@
+
+2015-10-19 21:47:24,821 [34] ERROR - *****Unhandled error occured in application*****
+Exception Type: 
+System.ArgumentExceptionException: Illegal characters in path.
+Stack Trace: 
+   at System.IO.Path.CheckInvalidPathChars(String path, Boolean checkAdditional)
+   at System.Security.Permissions.FileIOPermission.CheckIllegalCharacters(String[] str)
+   at System.Security.Permissions.FileIOPermission.AddPathList(FileIOPermissionAccess access, AccessControlActions control, String[] pathListOrig, Boolean checkForDuplicates, Boolean needFullPath, Boolean copyPathList)
+   at System.Security.Permissions.FileIOPermission..ctor(FileIOPermissionAccess access, String path)
+   at System.Web.InternalSecurityPermissions.PathDiscovery(String path)
+   at System.Web.HttpRequest.MapPath(VirtualPath virtualPath, VirtualPath baseVirtualDir, Boolean allowCrossAppMapping)
+   at System.Web.HttpServerUtility.MapPath(String path)
+   at Collaboration.Web.UI.UserControl.UC_Messages.gvTable_RowDataBound(Object sender, ListViewItemEventArgs e) in F:\HNW Projects\Shashank\22-06-15(Latest RiverMount)\Rivermount\Collaboration.Web.UI\UserControl\UC_Messages.ascx.cs:line 106
+   at System.Web.UI.WebControls.ListView.OnItemDataBound(ListViewItemEventArgs e)
+   at System.Web.UI.WebControls.ListView.CreateItemsWithoutGroups(ListViewPagedDataSource dataSource, Boolean dataBinding, InsertItemPosition insertPosition, ArrayList keyArray)
+   at System.Web.UI.WebControls.ListView.CreateChildControls(IEnumerable dataSource, Boolean dataBinding)
+   at System.Web.UI.WebControls.ListView.PerformDataBinding(IEnumerable data)
+   at System.Web.UI.WebControls.DataBoundControl.OnDataSourceViewSelectCallback(IEnumerable data)
+   at System.Web.UI.DataSourceView.Select(DataSourceSelectArguments arguments, DataSourceViewSelectCallback callback)
+   at System.Web.UI.WebControls.DataBoundControl.PerformSelect()
+   at System.Web.UI.WebControls.ListView.PerformSelect()
+   at System.Web.UI.WebControls.BaseDataBoundControl.DataBind()
+   at Collaboration.Web.UI.UserControl.UC_Messages.BindGrid() in F:\HNW Projects\Shashank\22-06-15(Latest RiverMount)\Rivermount\Collaboration.Web.UI\UserControl\UC_Messages.ascx.cs:line 199
+   at Collaboration.Web.UI.UserControl.UC_Messages.Update() in F:\HNW Projects\Shashank\22-06-15(Latest RiverMount)\Rivermount\Collaboration.Web.UI\UserControl\UC_Messages.ascx.cs:line 275Additonal Info: 
+Sender: /Messages/Messages.aspx
+
+2015-10-19 21:54:33,463 [24] ERROR - *****Unhandled error occured in application*****
+Exception Type: 
+System.ArgumentExceptionException: Illegal characters in path.
+Stack Trace: 
+   at System.IO.Path.CheckInvalidPathChars(String path, Boolean checkAdditional)
+   at System.Security.Permissions.FileIOPermission.CheckIllegalCharacters(String[] str)
+   at System.Security.Permissions.FileIOPermission.AddPathList(FileIOPermissionAccess access, AccessControlActions control, String[] pathListOrig, Boolean checkForDuplicates, Boolean needFullPath, Boolean copyPathList)
+   at System.Security.Permissions.FileIOPermission..ctor(FileIOPermissionAccess access, String path)
+   at System.Web.InternalSecurityPermissions.PathDiscovery(String path)
+   at System.Web.HttpRequest.MapPath(VirtualPath virtualPath, VirtualPath baseVirtualDir, Boolean allowCrossAppMapping)
+   at System.Web.HttpServerUtility.MapPath(String path)
+   at Collaboration.Web.UI.UserControl.UC_Messages.gvTable_RowDataBound(Object sender, ListViewItemEventArgs e) in F:\HNW Projects\Shashank\22-06-15(Latest RiverMount)\Rivermount\Collaboration.Web.UI\UserControl\UC_Messages.ascx.cs:line 77
+   at System.Web.UI.WebControls.ListView.OnItemDataBound(ListViewItemEventArgs e)
+   at System.Web.UI.WebControls.ListView.CreateItemsWithoutGroups(ListViewPagedDataSource dataSource, Boolean dataBinding, InsertItemPosition insertPosition, ArrayList keyArray)
+   at System.Web.UI.WebControls.ListView.CreateChildControls(IEnumerable dataSource, Boolean dataBinding)
+   at System.Web.UI.WebControls.ListView.PerformDataBinding(IEnumerable data)
+   at System.Web.UI.WebControls.DataBoundControl.OnDataSourceViewSelectCallback(IEnumerable data)
+   at System.Web.UI.DataSourceView.Select(DataSourceSelectArguments arguments, DataSourceViewSelectCallback callback)
+   at System.Web.UI.WebControls.DataBoundControl.PerformSelect()
+   at System.Web.UI.WebControls.ListView.PerformSelect()
+   at System.Web.UI.WebControls.BaseDataBoundControl.DataBind()
+   at Collaboration.Web.UI.UserControl.UC_Messages.BindGrid() in F:\HNW Projects\Shashank\22-06-15(Latest RiverMount)\Rivermount\Collaboration.Web.UI\UserControl\UC_Messages.ascx.cs:line 199
+   at Collaboration.Web.UI.UserControl.UC_Messages.Update() in F:\HNW Projects\Shashank\22-06-15(Latest RiverMount)\Rivermount\Collaboration.Web.UI\UserControl\UC_Messages.ascx.cs:line 275Additonal Info: 
+Sender: /Messages/Messages.aspx

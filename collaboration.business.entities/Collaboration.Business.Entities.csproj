@@ -1,0 +1,190 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{406E7A94-0F8B-467A-8784-4615C867283A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Collaboration.Business.Entities</RootNamespace>
+    <AssemblyName>Collaboration.Business.Entities</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CollaborationEntities.cs">
+      <DependentUpon>CollaborationEntities.tt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Customer_Temp.cs">
+      <DependentUpon>CollaborationEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DashboardData_Result.cs">
+      <DependentUpon>CollaborationEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OrderDetails_Result.cs">
+      <DependentUpon>CollaborationEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OrderEntity.cs" />
+    <Compile Include="Customer.cs">
+      <DependentUpon>CollaborationEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FingerSize.cs">
+      <DependentUpon>CollaborationEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Message.cs">
+      <DependentUpon>CollaborationEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MessagesAttachment.cs">
+      <DependentUpon>CollaborationEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Messages_Result.cs">
+      <DependentUpon>CollaborationEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MessageThread.cs">
+      <DependentUpon>CollaborationEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MessageThreads_Result.cs">
+      <DependentUpon>CollaborationEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MessageTo.cs">
+      <DependentUpon>CollaborationEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Metal.cs">
+      <DependentUpon>CollaborationEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelType.cs">
+      <DependentUpon>CollaborationEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Order.cs">
+      <DependentUpon>CollaborationEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OrderParticipant.cs">
+      <DependentUpon>CollaborationEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OrderParticipants_Result.cs">
+      <DependentUpon>CollaborationEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OrdersCAD.cs">
+      <DependentUpon>CollaborationEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OrderSerialNumber.cs">
+      <DependentUpon>CollaborationEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OrderStatu.cs">
+      <DependentUpon>CollaborationEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Orders_Result.cs">
+      <DependentUpon>CollaborationEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Priority.cs">
+      <DependentUpon>CollaborationEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProcessType.cs">
+      <DependentUpon>CollaborationEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RingType.cs">
+      <DependentUpon>CollaborationEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Role.cs">
+      <DependentUpon>CollaborationEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Sample.cs">
+      <DependentUpon>CollaborationEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SampleStatu.cs">
+      <DependentUpon>CollaborationEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SamplesTracking.cs">
+      <DependentUpon>CollaborationEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SamplesTrackingHistory.cs" />
+    <Compile Include="SamplesTrackingHistory_Result.cs" />
+    <Compile Include="SampleTracking_Result.cs">
+      <DependentUpon>CollaborationEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Specimen.cs">
+      <DependentUpon>CollaborationEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Ticket.cs">
+      <DependentUpon>CollaborationEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TicketParticipants_Result.cs">
+      <DependentUpon>CollaborationEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TicketsAttachment.cs">
+      <DependentUpon>CollaborationEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Tickets_Result.cs">
+      <DependentUpon>CollaborationEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TicketThread.cs">
+      <DependentUpon>CollaborationEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TicketThreads_Result.cs">
+      <DependentUpon>CollaborationEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TicketTo.cs">
+      <DependentUpon>CollaborationEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="User.cs">
+      <DependentUpon>CollaborationEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UserEntity.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.Config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CollaborationEntities.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>CollaborationEntities.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
