@@ -1,0 +1,13 @@
+F:\HNW Projects\Shashank\22-06-15(Latest RiverMount)\Rivermount\Logging\bin\Debug\Logging.dll
+F:\HNW Projects\Shashank\22-06-15(Latest RiverMount)\Rivermount\Logging\bin\Debug\Logging.pdb
+F:\HNW Projects\Shashank\22-06-15(Latest RiverMount)\Rivermount\Logging\bin\Debug\log4net.dll
+F:\HNW Projects\Shashank\22-06-15(Latest RiverMount)\Rivermount\Logging\bin\Debug\log4net.xml
+F:\HNW Projects\Shashank\22-06-15(Latest RiverMount)\Rivermount\Logging\obj\Debug\Logging.csprojResolveAssemblyReference.cache
+F:\HNW Projects\Shashank\22-06-15(Latest RiverMount)\Rivermount\Logging\obj\Debug\Logging.dll
+F:\HNW Projects\Shashank\22-06-15(Latest RiverMount)\Rivermount\Logging\obj\Debug\Logging.pdb
+E:\Activities\Infozzle\From Rahul on July 10, 2015\RiverMount\Logging\bin\Debug\Logging.dll
+E:\Activities\Infozzle\From Rahul on July 10, 2015\RiverMount\Logging\bin\Debug\Logging.pdb
+E:\Activities\Infozzle\From Rahul on July 10, 2015\RiverMount\Logging\bin\Debug\log4net.dll
+E:\Activities\Infozzle\From Rahul on July 10, 2015\RiverMount\Logging\bin\Debug\log4net.xml
+E:\Activities\Infozzle\From Rahul on July 10, 2015\RiverMount\Logging\obj\Debug\Logging.dll
+E:\Activities\Infozzle\From Rahul on July 10, 2015\RiverMount\Logging\obj\Debug\Logging.pdb
