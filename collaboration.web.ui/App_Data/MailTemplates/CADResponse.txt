@@ -1,0 +1,16 @@
+﻿<html xmlns="http://www.w3.org/1999/xhtml">
+<head><title></title></head>
+<body>
+<img src="{3}" alt="" /><br /><br />
+<div style = "border-top:3px solid #22BCE5">&nbsp;</div>
+<span style = "font-family:Arial;font-size:10pt">
+Dear <b>{0}</b>,<br /><br />
+<p>Here is the CAD response from the customer</p><br />
+Order Serial Number:<b> {1}</b><br />
+Approved: {2}<br />
+<br /><br />
+Thank you<br />
+River Mounts
+</span>
+</body>
+</html>

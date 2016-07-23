@@ -1,0 +1,11 @@
+F:\HNW Projects\Shashank\22-06-15(Latest RiverMount)\Rivermount\Collaboration.Business.Entities\bin\Debug\Collaboration.Business.Entities.dll.config
+F:\HNW Projects\Shashank\22-06-15(Latest RiverMount)\Rivermount\Collaboration.Business.Entities\bin\Debug\Collaboration.Business.Entities.dll
+F:\HNW Projects\Shashank\22-06-15(Latest RiverMount)\Rivermount\Collaboration.Business.Entities\bin\Debug\Collaboration.Business.Entities.pdb
+F:\HNW Projects\Shashank\22-06-15(Latest RiverMount)\Rivermount\Collaboration.Business.Entities\obj\Debug\Collaboration.Business.Entities.csprojResolveAssemblyReference.cache
+F:\HNW Projects\Shashank\22-06-15(Latest RiverMount)\Rivermount\Collaboration.Business.Entities\obj\Debug\Collaboration.Business.Entities.dll
+F:\HNW Projects\Shashank\22-06-15(Latest RiverMount)\Rivermount\Collaboration.Business.Entities\obj\Debug\Collaboration.Business.Entities.pdb
+E:\Activities\Infozzle\From Rahul on July 10, 2015\RiverMount\Collaboration.Business.Entities\bin\Debug\Collaboration.Business.Entities.dll.config
+E:\Activities\Infozzle\From Rahul on July 10, 2015\RiverMount\Collaboration.Business.Entities\bin\Debug\Collaboration.Business.Entities.dll
+E:\Activities\Infozzle\From Rahul on July 10, 2015\RiverMount\Collaboration.Business.Entities\bin\Debug\Collaboration.Business.Entities.pdb
+E:\Activities\Infozzle\From Rahul on July 10, 2015\RiverMount\Collaboration.Business.Entities\obj\Debug\Collaboration.Business.Entities.dll
+E:\Activities\Infozzle\From Rahul on July 10, 2015\RiverMount\Collaboration.Business.Entities\obj\Debug\Collaboration.Business.Entities.pdb

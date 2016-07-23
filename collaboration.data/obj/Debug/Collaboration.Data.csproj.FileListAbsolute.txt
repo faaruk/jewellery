@@ -1,0 +1,16 @@
+F:\HNW Projects\Shashank\22-06-15(Latest RiverMount)\Rivermount\Collaboration.Data\bin\Debug\Collaboration.Data.dll.config
+F:\HNW Projects\Shashank\22-06-15(Latest RiverMount)\Rivermount\Collaboration.Data\bin\Debug\Collaboration.Data.dll
+F:\HNW Projects\Shashank\22-06-15(Latest RiverMount)\Rivermount\Collaboration.Data\bin\Debug\Collaboration.Data.pdb
+F:\HNW Projects\Shashank\22-06-15(Latest RiverMount)\Rivermount\Collaboration.Data\bin\Debug\Collaboration.Business.Entities.dll
+F:\HNW Projects\Shashank\22-06-15(Latest RiverMount)\Rivermount\Collaboration.Data\bin\Debug\Collaboration.Business.Entities.pdb
+F:\HNW Projects\Shashank\22-06-15(Latest RiverMount)\Rivermount\Collaboration.Data\obj\Debug\Collaboration.Data.csprojResolveAssemblyReference.cache
+F:\HNW Projects\Shashank\22-06-15(Latest RiverMount)\Rivermount\Collaboration.Data\obj\Debug\Collaboration.Data.dll
+F:\HNW Projects\Shashank\22-06-15(Latest RiverMount)\Rivermount\Collaboration.Data\obj\Debug\Collaboration.Data.pdb
+E:\Activities\Infozzle\From Rahul on July 10, 2015\RiverMount\Collaboration.Data\bin\Debug\Collaboration.Data.dll.config
+E:\Activities\Infozzle\From Rahul on July 10, 2015\RiverMount\Collaboration.Data\bin\Debug\Collaboration.Data.dll
+E:\Activities\Infozzle\From Rahul on July 10, 2015\RiverMount\Collaboration.Data\bin\Debug\Collaboration.Data.pdb
+E:\Activities\Infozzle\From Rahul on July 10, 2015\RiverMount\Collaboration.Data\bin\Debug\Collaboration.Business.Entities.dll
+E:\Activities\Infozzle\From Rahul on July 10, 2015\RiverMount\Collaboration.Data\bin\Debug\Collaboration.Business.Entities.pdb
+E:\Activities\Infozzle\From Rahul on July 10, 2015\RiverMount\Collaboration.Data\obj\Debug\Collaboration.Data.csprojResolveAssemblyReference.cache
+E:\Activities\Infozzle\From Rahul on July 10, 2015\RiverMount\Collaboration.Data\obj\Debug\Collaboration.Data.dll
+E:\Activities\Infozzle\From Rahul on July 10, 2015\RiverMount\Collaboration.Data\obj\Debug\Collaboration.Data.pdb

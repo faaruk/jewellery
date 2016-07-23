@@ -1,0 +1,88 @@
+
+2015-07-12 15:00:57,490 [11] ERROR - *****Unhandled error occured in application*****
+Exception Type: 
+Collaboration.Business.Components.BLLExceptionException: Exception of type 'Collaboration.Business.Components.BLLException' was thrown.
+Stack Trace: 
+   at Collaboration.Business.Components.OrderManager.ModifyOrderDetails(Order order) in E:\Activities\Infozzle\From Rahul on July 10, 2015\RiverMount\Collaboration.Business.Components\OrderManager.cs:line 156
+   at Collaboration.Web.UI.Orders.ViewOrderDetails.btnSave_Click(Object sender, EventArgs e) in F:\HNW Projects\Shashank\22-06-15(Latest RiverMount)\Rivermount\Collaboration.Web.UI\Orders\ViewOrderDetails.aspx.cs:line 188Additonal Info: 
+Procedure: 
+
+2015-07-12 15:02:08,187 [17] ERROR - *****Unhandled error occured in application*****
+Exception Type: 
+Collaboration.Business.Components.BLLExceptionException: Exception of type 'Collaboration.Business.Components.BLLException' was thrown.
+Stack Trace: 
+   at Collaboration.Business.Components.OrderManager.ModifyOrderDetails(Order order) in E:\Activities\Infozzle\From Rahul on July 10, 2015\RiverMount\Collaboration.Business.Components\OrderManager.cs:line 156
+   at Collaboration.Web.UI.Orders.ViewOrderDetails.btnSave_Click(Object sender, EventArgs e) in F:\HNW Projects\Shashank\22-06-15(Latest RiverMount)\Rivermount\Collaboration.Web.UI\Orders\ViewOrderDetails.aspx.cs:line 188Additonal Info: 
+Procedure: 
+
+2015-07-12 15:03:26,057 [16] ERROR - *****Unhandled error occured in application*****
+Exception Type: 
+Collaboration.Business.Components.BLLExceptionException: Exception of type 'Collaboration.Business.Components.BLLException' was thrown.
+Stack Trace: 
+   at Collaboration.Business.Components.OrderManager.ModifyOrderDetails(Order order) in E:\Activities\Infozzle\From Rahul on July 10, 2015\RiverMount\Collaboration.Business.Components\OrderManager.cs:line 156
+   at Collaboration.Web.UI.Orders.ViewOrderDetails.btnSave_Click(Object sender, EventArgs e) in F:\HNW Projects\Shashank\22-06-15(Latest RiverMount)\Rivermount\Collaboration.Web.UI\Orders\ViewOrderDetails.aspx.cs:line 188Additonal Info: 
+Procedure: 
+
+2015-07-12 15:04:07,293 [11] ERROR - *****Unhandled error occured in application*****
+Exception Type: 
+Collaboration.Business.Components.BLLExceptionException: Exception of type 'Collaboration.Business.Components.BLLException' was thrown.
+Stack Trace: 
+   at Collaboration.Business.Components.OrderManager.ModifyOrderDetails(Order order) in E:\Activities\Infozzle\From Rahul on July 10, 2015\RiverMount\Collaboration.Business.Components\OrderManager.cs:line 156
+   at Collaboration.Web.UI.Orders.ViewOrderDetails.btnSave_Click(Object sender, EventArgs e) in F:\HNW Projects\Shashank\22-06-15(Latest RiverMount)\Rivermount\Collaboration.Web.UI\Orders\ViewOrderDetails.aspx.cs:line 188Additonal Info: 
+Procedure: 
+
+2015-07-12 15:04:12,297 [11] ERROR - *****Unhandled error occured in application*****
+Exception Type: 
+Collaboration.Business.Components.BLLExceptionException: Exception of type 'Collaboration.Business.Components.BLLException' was thrown.
+Stack Trace: 
+   at Collaboration.Business.Components.OrderManager.ModifyOrderDetails(Order order) in E:\Activities\Infozzle\From Rahul on July 10, 2015\RiverMount\Collaboration.Business.Components\OrderManager.cs:line 156
+   at Collaboration.Web.UI.Orders.ViewOrderDetails.btnSave_Click(Object sender, EventArgs e) in F:\HNW Projects\Shashank\22-06-15(Latest RiverMount)\Rivermount\Collaboration.Web.UI\Orders\ViewOrderDetails.aspx.cs:line 188Additonal Info: 
+Procedure: 
+
+2015-07-12 15:05:01,920 [11] ERROR - *****Unhandled error occured in application*****
+Exception Type: 
+Collaboration.Business.Components.BLLExceptionException: Exception of type 'Collaboration.Business.Components.BLLException' was thrown.
+Stack Trace: 
+   at Collaboration.Business.Components.OrderManager.ModifyOrderDetails(Order order) in E:\Activities\Infozzle\From Rahul on July 10, 2015\RiverMount\Collaboration.Business.Components\OrderManager.cs:line 156
+   at Collaboration.Web.UI.Orders.ViewOrderDetails.btnSave_Click(Object sender, EventArgs e) in F:\HNW Projects\Shashank\22-06-15(Latest RiverMount)\Rivermount\Collaboration.Web.UI\Orders\ViewOrderDetails.aspx.cs:line 188Additonal Info: 
+Procedure: 
+
+2015-07-12 15:11:20,665 [12] ERROR - *****Unhandled error occured in application*****
+Exception Type: 
+System.NullReferenceExceptionException: Object reference not set to an instance of an object.
+Stack Trace: 
+   at Collaboration.Web.UI.Orders.ViewOrderDetails.btnSave_Click(Object sender, EventArgs e) in F:\HNW Projects\Shashank\22-06-15(Latest RiverMount)\Rivermount\Collaboration.Web.UI\Orders\ViewOrderDetails.aspx.cs:line 214Additonal Info: 
+Sender: /collaboration.web.ui/Orders/ViewOrderDetails.aspx?OrderID=2120
+
+2015-07-12 19:37:30,941 [17] ERROR - *****Unhandled error occured in application*****
+Exception Type: 
+System.Net.Mail.SmtpExceptionException: The SMTP server requires a secure connection or the client was not authenticated. The server response was: 5.5.1 Authentication Required. Learn more at
+Stack Trace: 
+   at System.Net.Mail.MailCommand.CheckResponse(SmtpStatusCode statusCode, String response)
+   at System.Net.Mail.MailCommand.Send(SmtpConnection conn, Byte[] command, MailAddress from, Boolean allowUnicode)
+   at System.Net.Mail.SmtpTransport.SendMail(MailAddress sender, MailAddressCollection recipients, String deliveryNotify, Boolean allowUnicode, SmtpFailedRecipientException& exception)
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   at Collaboration.Web.UI.Utilities.MailUtility.SendMail(String toList, String ccList, String body, String subject, String& errorMessage) in F:\HNW Projects\Shashank\22-06-15(Latest RiverMount)\Rivermount\Collaboration.Web.UI\Utilities\MailUtility.cs:line 121Additonal Info: 
+SMTP Error Code: MustIssueStartTlsFirst
+
+2015-07-12 19:44:25,836 [6] ERROR - *****Unhandled error occured in application*****
+Exception Type: 
+System.Net.Mail.SmtpExceptionException: The SMTP server requires a secure connection or the client was not authenticated. The server response was: 5.5.1 Authentication Required. Learn more at
+Stack Trace: 
+   at System.Net.Mail.MailCommand.CheckResponse(SmtpStatusCode statusCode, String response)
+   at System.Net.Mail.MailCommand.Send(SmtpConnection conn, Byte[] command, MailAddress from, Boolean allowUnicode)
+   at System.Net.Mail.SmtpTransport.SendMail(MailAddress sender, MailAddressCollection recipients, String deliveryNotify, Boolean allowUnicode, SmtpFailedRecipientException& exception)
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   at Collaboration.Web.UI.Utilities.MailUtility.SendMail(String toList, String ccList, String body, String subject, String& errorMessage)Additonal Info: 
+SMTP Error Code: MustIssueStartTlsFirst
+
+2015-07-12 19:54:03,952 [11] ERROR - *****Unhandled error occured in application*****
+Exception Type: 
+System.Net.Mail.SmtpExceptionException: The SMTP server requires a secure connection or the client was not authenticated. The server response was: 5.5.1 Authentication Required. Learn more at
+Stack Trace: 
+   at System.Net.Mail.MailCommand.CheckResponse(SmtpStatusCode statusCode, String response)
+   at System.Net.Mail.MailCommand.Send(SmtpConnection conn, Byte[] command, MailAddress from, Boolean allowUnicode)
+   at System.Net.Mail.SmtpTransport.SendMail(MailAddress sender, MailAddressCollection recipients, String deliveryNotify, Boolean allowUnicode, SmtpFailedRecipientException& exception)
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   at Collaboration.Web.UI.Utilities.MailUtility.SendMail(String toList, String ccList, String body, String subject, String& errorMessage) in F:\HNW Projects\Shashank\22-06-15(Latest RiverMount)\Rivermount\Collaboration.Web.UI\Utilities\MailUtility.cs:line 121Additonal Info: 
+SMTP Error Code: MustIssueStartTlsFirst

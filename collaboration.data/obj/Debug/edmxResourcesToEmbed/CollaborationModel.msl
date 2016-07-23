@@ -1,0 +1,875 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="RiverMount_CollaborationDBModelStoreContainer" CdmEntityContainer="CollaborationDBContext">
+    <FunctionImportMapping FunctionImportName="ValidateUser" FunctionName="RiverMount_CollaborationDBModel.Store.Validate_User" />
+    <FunctionImportMapping FunctionImportName="CreateModelType" FunctionName="RiverMount_CollaborationDBModel.Store.ModelType_Insert" />
+    <FunctionImportMapping FunctionImportName="DeleteUser" FunctionName="RiverMount_CollaborationDBModel.Store.User_Delete" />
+    <FunctionImportMapping FunctionImportName="ModifyModelType" FunctionName="RiverMount_CollaborationDBModel.Store.ModelType_Update" />
+    <FunctionImportMapping FunctionImportName="DeleteModelType" FunctionName="RiverMount_CollaborationDBModel.Store.ModelType_Delete" />
+    <FunctionImportMapping FunctionImportName="CreateMetal" FunctionName="RiverMount_CollaborationDBModel.Store.Metal_Insert" />
+    <FunctionImportMapping FunctionImportName="ModifyMetal" FunctionName="RiverMount_CollaborationDBModel.Store.Metal_Update" />
+    <FunctionImportMapping FunctionImportName="DeleteMetal" FunctionName="RiverMount_CollaborationDBModel.Store.Metal_Delete" />
+    <FunctionImportMapping FunctionImportName="GetMetals" FunctionName="RiverMount_CollaborationDBModel.Store.Metal_Select" />
+    <FunctionImportMapping FunctionImportName="ChangePassword" FunctionName="RiverMount_CollaborationDBModel.Store.User_ChangePassword" />
+    <FunctionImportMapping FunctionImportName="GetModelTypes" FunctionName="RiverMount_CollaborationDBModel.Store.ModelType_Select" />
+    <FunctionImportMapping FunctionImportName="CreateFingerSize" FunctionName="RiverMount_CollaborationDBModel.Store.FingerSize_Insert" />
+    <FunctionImportMapping FunctionImportName="ModifyFingerSize" FunctionName="RiverMount_CollaborationDBModel.Store.FingerSize_Update" />
+    <FunctionImportMapping FunctionImportName="GetFingerSizes" FunctionName="RiverMount_CollaborationDBModel.Store.FingerSize_Select" />
+    <FunctionImportMapping FunctionImportName="GetMessageThreads" FunctionName="RiverMount_CollaborationDBModel.Store.MessageThread_Select">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RiverMount_CollaborationDBModel.MessageThreads_Result">
+          <ScalarProperty Name="MessageThreadID" ColumnName="MessageThreadID" />
+          <ScalarProperty Name="SerialNumber" ColumnName="SerialNumber" />
+          <ScalarProperty Name="ModifyDate" ColumnName="ModifyDate" />
+          <ScalarProperty Name="NoOfMessages" ColumnName="NoOfMessages" />
+          <ScalarProperty Name="OrderID" ColumnName="OrderID" />
+          <ScalarProperty Name="HasUnReadMessages" ColumnName="HasUnReadMessages" />
+          <ScalarProperty Name="LastModifiedUserID" ColumnName="LastModifiedUserID" />
+          <ScalarProperty Name="LastModifiedUserName" ColumnName="LastModifiedUserName" />
+          <ScalarProperty Name="AssignedToUserID" ColumnName="AssignedToUserID" />
+          <ScalarProperty Name="AssignedToUserName" ColumnName="AssignedToUserName" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="CreateMessage" FunctionName="RiverMount_CollaborationDBModel.Store.Message_Insert" />
+    <FunctionImportMapping FunctionImportName="GetMessages" FunctionName="RiverMount_CollaborationDBModel.Store.Message_Select">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RiverMount_CollaborationDBModel.Messages_Result">
+          <ScalarProperty Name="MessageID" ColumnName="MessageID" />
+          <ScalarProperty Name="MessageText" ColumnName="MessageText" />
+          <ScalarProperty Name="MessageThreadID" ColumnName="MessageThreadID" />
+          <ScalarProperty Name="Subject" ColumnName="Subject" />
+          <ScalarProperty Name="SentFromUserID" ColumnName="SentFromUserID" />
+          <ScalarProperty Name="SentFromUserName" ColumnName="SentFromUserName" />
+          <ScalarProperty Name="LocationURL" ColumnName="LocationURL" />
+          <ScalarProperty Name="ContentType" ColumnName="ContentType" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="DeleteProcessType" FunctionName="RiverMount_CollaborationDBModel.Store.ProcessType_Delete" />
+    <FunctionImportMapping FunctionImportName="GetProcessTypes" FunctionName="RiverMount_CollaborationDBModel.Store.ProcessType_Select" />
+    <FunctionImportMapping FunctionImportName="ModifyProcessType" FunctionName="RiverMount_CollaborationDBModel.Store.ProcessType_Update" />
+    <FunctionImportMapping FunctionImportName="CreateProcessType" FunctionName="RiverMount_CollaborationDBModel.Store.ProcessType_Insert" />
+    <FunctionImportMapping FunctionImportName="DeleteFingerSize" FunctionName="RiverMount_CollaborationDBModel.Store.FingerSize_Delete" />
+    <FunctionImportMapping FunctionImportName="GetPriorities" FunctionName="RiverMount_CollaborationDBModel.Store.Priority_Select" />
+    <FunctionImportMapping FunctionImportName="DeletePriority" FunctionName="RiverMount_CollaborationDBModel.Store.Priority_Delete" />
+    <FunctionImportMapping FunctionImportName="ModifyPriority" FunctionName="RiverMount_CollaborationDBModel.Store.Priority_Update" />
+    <FunctionImportMapping FunctionImportName="CreatePriority" FunctionName="RiverMount_CollaborationDBModel.Store.Priority_Insert" />
+    <FunctionImportMapping FunctionImportName="GetRingTypes" FunctionName="RiverMount_CollaborationDBModel.Store.RingType_Select" />
+    <FunctionImportMapping FunctionImportName="DeleteRingType" FunctionName="RiverMount_CollaborationDBModel.Store.RingType_Delete" />
+    <FunctionImportMapping FunctionImportName="CreateRingType" FunctionName="RiverMount_CollaborationDBModel.Store.RingType_Insert" />
+    <FunctionImportMapping FunctionImportName="ModifyRingType" FunctionName="RiverMount_CollaborationDBModel.Store.RingType_Update" />
+    <FunctionImportMapping FunctionImportName="GetOrderparticipants" FunctionName="RiverMount_CollaborationDBModel.Store.OrderParticipants_Select">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RiverMount_CollaborationDBModel.OrderParticipants_Result">
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="RoleID" ColumnName="RoleID" />
+          <ScalarProperty Name="EMail" ColumnName="EMail" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="MarkMessageAsRead" FunctionName="RiverMount_CollaborationDBModel.Store.MessageTo_MarkRead" />
+    <FunctionImportMapping FunctionImportName="GetCustomers" FunctionName="RiverMount_CollaborationDBModel.Store.Customers_Select" />
+    <FunctionImportMapping FunctionImportName="GetAndSetSerialNumber" FunctionName="RiverMount_CollaborationDBModel.Store.SerialNumber_Insert" />
+    <FunctionImportMapping FunctionImportName="GetStatuses" FunctionName="RiverMount_CollaborationDBModel.Store.OrderStatus_Select" />
+    <FunctionImportMapping FunctionImportName="GetDashboardData" FunctionName="RiverMount_CollaborationDBModel.Store.DasahboardData_Select">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RiverMount_CollaborationDBModel.DashboardData_Result">
+          <ScalarProperty Name="CountInitiated" ColumnName="CountInitiated" />
+          <ScalarProperty Name="CountCADInProgress" ColumnName="CountCADInProgress" />
+          <ScalarProperty Name="CountPendingTMReview" ColumnName="CountPendingTMReview" />
+          <ScalarProperty Name="CountChangeRequested" ColumnName="CountChangeRequested" />
+          <ScalarProperty Name="CountPendingCustomerConfirmation" ColumnName="CountPendingCustomerConfirmation" />
+          <ScalarProperty Name="CountCADConfirmed" ColumnName="CountCADConfirmed" />
+          <ScalarProperty Name="CountPrototypingBegins" ColumnName="CountPrototypingBegins" />
+          <ScalarProperty Name="CountProductionInProgress" ColumnName="CountProductionInProgress" />
+          <ScalarProperty Name="CountShipped" ColumnName="CountShipped" />
+          <ScalarProperty Name="CountOrdersDelayed" ColumnName="CountOrdersDelayed" />
+          <ScalarProperty Name="CountOrdersApproachingDeadline" ColumnName="CountOrdersApproachingDeadline" />
+          <ScalarProperty Name="CountSampleNotReturned" ColumnName="CountSampleNotReturned" />
+          <ScalarProperty Name="CountTMNotAssigned" ColumnName="CountTMNotAssigned" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GetUnReadMessages" FunctionName="RiverMount_CollaborationDBModel.Store.Message_SelectByReadStatus">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RiverMount_CollaborationDBModel.Messages_Result">
+          <ScalarProperty Name="MessageID" ColumnName="MessageID" />
+          <ScalarProperty Name="MessageText" ColumnName="MessageText" />
+          <ScalarProperty Name="MessageThreadID" ColumnName="MessageThreadID" />
+          <ScalarProperty Name="Subject" ColumnName="Subject" />
+          <ScalarProperty Name="SentFromUserID" ColumnName="SentFromUserID" />
+          <ScalarProperty Name="SentFromUserName" ColumnName="SentFromUserName" />
+          <ScalarProperty Name="LocationURL" ColumnName="LocationURL" />
+          <ScalarProperty Name="ContentType" ColumnName="ContentType" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GetMessagesByAssignment" FunctionName="RiverMount_CollaborationDBModel.Store.Message_SelectByAssignedTo">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RiverMount_CollaborationDBModel.Messages_Result">
+          <ScalarProperty Name="MessageID" ColumnName="MessageID" />
+          <ScalarProperty Name="MessageText" ColumnName="MessageText" />
+          <ScalarProperty Name="MessageThreadID" ColumnName="MessageThreadID" />
+          <ScalarProperty Name="Subject" ColumnName="Subject" />
+          <ScalarProperty Name="SentFromUserID" ColumnName="SentFromUserID" />
+          <ScalarProperty Name="SentFromUserName" ColumnName="SentFromUserName" />
+          <ScalarProperty Name="LocationURL" ColumnName="LocationURL" />
+          <ScalarProperty Name="ContentType" ColumnName="ContentType" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GetSamples" FunctionName="RiverMount_CollaborationDBModel.Store.Sample_Select" />
+    <FunctionImportMapping FunctionImportName="UpdateSampleInfo" FunctionName="RiverMount_CollaborationDBModel.Store.Sample_Update" />
+    <EntitySetMapping Name="FingerSizes">
+      <EntityTypeMapping TypeName="RiverMount_CollaborationDBModel.FingerSize">
+        <MappingFragment StoreEntitySet="FingerSize">
+          <ScalarProperty Name="ModifyDate" ColumnName="ModifyDate" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Size" ColumnName="Size" />
+          <ScalarProperty Name="FingerSizeID" ColumnName="FingerSizeID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Messages">
+      <EntityTypeMapping TypeName="RiverMount_CollaborationDBModel.Message">
+        <MappingFragment StoreEntitySet="Messages">
+          <ScalarProperty Name="ModifyDate" ColumnName="ModifyDate" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="HasAttachment" ColumnName="HasAttachment" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="Subject" ColumnName="Subject" />
+          <ScalarProperty Name="SentFrom" ColumnName="SentFrom" />
+          <ScalarProperty Name="MessageText" ColumnName="MessageText" />
+          <ScalarProperty Name="MessageID" ColumnName="MessageID" />
+          <ScalarProperty Name="MessageThreadID" ColumnName="MessageThreadID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MessagesAttachments">
+      <EntityTypeMapping TypeName="RiverMount_CollaborationDBModel.MessagesAttachment">
+        <MappingFragment StoreEntitySet="MessagesAttachment">
+          <ScalarProperty Name="ModifyDate" ColumnName="ModifyDate" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="ContentType" ColumnName="ContentType" />
+          <ScalarProperty Name="LocationURL" ColumnName="LocationURL" />
+          <ScalarProperty Name="MessageID" ColumnName="MessageID" />
+          <ScalarProperty Name="AttachmentID" ColumnName="AttachmentID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MessageThreads">
+      <EntityTypeMapping TypeName="RiverMount_CollaborationDBModel.MessageThread">
+        <MappingFragment StoreEntitySet="MessageThread">
+          <ScalarProperty Name="ModifyDate" ColumnName="ModifyDate" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="AssignedTo" ColumnName="AssignedTo" />
+          <ScalarProperty Name="LastModifiedBy" ColumnName="LastModifiedBy" />
+          <ScalarProperty Name="ClosingRemarks" ColumnName="ClosingRemarks" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Subject" ColumnName="Subject" />
+          <ScalarProperty Name="OrderID" ColumnName="OrderID" />
+          <ScalarProperty Name="MessageThreadID" ColumnName="MessageThreadID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MessageToes">
+      <EntityTypeMapping TypeName="RiverMount_CollaborationDBModel.MessageTo">
+        <MappingFragment StoreEntitySet="MessageTo">
+          <ScalarProperty Name="ModifyDate" ColumnName="ModifyDate" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="ReadTime" ColumnName="ReadTime" />
+          <ScalarProperty Name="HasRead" ColumnName="HasRead" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="SentTo" ColumnName="SentTo" />
+          <ScalarProperty Name="MessageID" ColumnName="MessageID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Metals">
+      <EntityTypeMapping TypeName="RiverMount_CollaborationDBModel.Metal">
+        <MappingFragment StoreEntitySet="Metal">
+          <ScalarProperty Name="ModifyDate" ColumnName="ModifyDate" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="MetalName" ColumnName="MetalName" />
+          <ScalarProperty Name="MetalID" ColumnName="MetalID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OrderParticipants">
+      <EntityTypeMapping TypeName="RiverMount_CollaborationDBModel.OrderParticipant">
+        <MappingFragment StoreEntitySet="OrderParticipants">
+          <ScalarProperty Name="ModifyDate" ColumnName="ModifyDate" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="OrderID" ColumnName="OrderID" />
+          <ScalarProperty Name="OrderParticipantID" ColumnName="OrderParticipantID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OrdersCADs">
+      <EntityTypeMapping TypeName="RiverMount_CollaborationDBModel.OrdersCAD">
+        <MappingFragment StoreEntitySet="OrdersCAD">
+          <ScalarProperty Name="ChangeInstructionsCustomer" ColumnName="ChangeInstructionsCustomer" />
+          <ScalarProperty Name="IsUpdatedByCustomer" ColumnName="IsUpdatedByCustomer" />
+          <ScalarProperty Name="ModifyDate" ColumnName="ModifyDate" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="UploadedOn" ColumnName="UploadedOn" />
+          <ScalarProperty Name="ChangeInstructions" ColumnName="ChangeInstructions" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="IsApproved" ColumnName="IsApproved" />
+          <ScalarProperty Name="UploadedBy" ColumnName="UploadedBy" />
+          <ScalarProperty Name="CADLocationURL" ColumnName="CADLocationURL" />
+          <ScalarProperty Name="OrderID" ColumnName="OrderID" />
+          <ScalarProperty Name="CADID" ColumnName="CADID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OrderSerialNumbers">
+      <EntityTypeMapping TypeName="RiverMount_CollaborationDBModel.OrderSerialNumber">
+        <MappingFragment StoreEntitySet="OrderSerialNumber">
+          <ScalarProperty Name="ModifyDate" ColumnName="ModifyDate" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="SerialNumber" ColumnName="SerialNumber" />
+          <ScalarProperty Name="SerialNumberID" ColumnName="SerialNumberID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OrderStatus">
+      <EntityTypeMapping TypeName="RiverMount_CollaborationDBModel.OrderStatu">
+        <MappingFragment StoreEntitySet="OrderStatus">
+          <ScalarProperty Name="ModifyDate" ColumnName="ModifyDate" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="Action" ColumnName="Action" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="StatusID" ColumnName="StatusID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Priorities">
+      <EntityTypeMapping TypeName="RiverMount_CollaborationDBModel.Priority">
+        <MappingFragment StoreEntitySet="Priority">
+          <ScalarProperty Name="ModifyDate" ColumnName="ModifyDate" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Frequency" ColumnName="Frequency" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="PriorityID" ColumnName="PriorityID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProcessTypes">
+      <EntityTypeMapping TypeName="RiverMount_CollaborationDBModel.ProcessType">
+        <MappingFragment StoreEntitySet="ProcessType">
+          <ScalarProperty Name="ModifyDate" ColumnName="ModifyDate" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="ProcessTypeID" ColumnName="ProcessTypeID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RingTypes">
+      <EntityTypeMapping TypeName="RiverMount_CollaborationDBModel.RingType">
+        <MappingFragment StoreEntitySet="RingType">
+          <ScalarProperty Name="ModifyDate" ColumnName="ModifyDate" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="RingTypeID" ColumnName="RingTypeID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Roles">
+      <EntityTypeMapping TypeName="RiverMount_CollaborationDBModel.Role">
+        <MappingFragment StoreEntitySet="Roles">
+          <ScalarProperty Name="Modifydate" ColumnName="Modifydate" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="RoleType" ColumnName="RoleType" />
+          <ScalarProperty Name="RoleID" ColumnName="RoleID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Samples">
+      <EntityTypeMapping TypeName="RiverMount_CollaborationDBModel.Sample">
+        <MappingFragment StoreEntitySet="Samples">
+          <ScalarProperty Name="ModifyDate" ColumnName="ModifyDate" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="ReturnedDate" ColumnName="ReturnedDate" />
+          <ScalarProperty Name="ConfirmedBy" ColumnName="ConfirmedBy" />
+          <ScalarProperty Name="IsConfirmed" ColumnName="IsConfirmed" />
+          <ScalarProperty Name="IsReturned" ColumnName="IsReturned" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="SampleSerialNumber" ColumnName="SampleSerialNumber" />
+          <ScalarProperty Name="OrderID" ColumnName="OrderID" />
+          <ScalarProperty Name="SampleID" ColumnName="SampleID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Specimens">
+      <EntityTypeMapping TypeName="RiverMount_CollaborationDBModel.Specimen">
+        <MappingFragment StoreEntitySet="Specimen">
+          <ScalarProperty Name="ModifyDate" ColumnName="ModifyDate" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="ImageLocationURL" ColumnName="ImageLocationURL" />
+          <ScalarProperty Name="MessageID" ColumnName="MessageID" />
+          <ScalarProperty Name="OrderID" ColumnName="OrderID" />
+          <ScalarProperty Name="SpecimenID" ColumnName="SpecimenID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="RiverMount_CollaborationDBModel.User">
+        <MappingFragment StoreEntitySet="Users">
+          <ScalarProperty Name="LastLoginDate" ColumnName="LastLoginDate" />
+          <ScalarProperty Name="ModifyDate" ColumnName="ModifyDate" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="DefaultPasswordChanged" ColumnName="DefaultPasswordChanged" />
+          <ScalarProperty Name="RoleID" ColumnName="RoleID" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="ImageLocationURL" ColumnName="ImageLocationURL" />
+          <ScalarProperty Name="Mobile" ColumnName="Mobile" />
+          <ScalarProperty Name="EMail" ColumnName="EMail" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="CreateUser" FunctionName="RiverMount_CollaborationDBModel.Store.User_Insert" />
+    <FunctionImportMapping FunctionImportName="GetOrderCADs" FunctionName="RiverMount_CollaborationDBModel.Store.OrderCAD_Select" />
+    <FunctionImportMapping FunctionImportName="GetOrderDetails" FunctionName="RiverMount_CollaborationDBModel.Store.OrderDetails_Select">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RiverMount_CollaborationDBModel.OrderDetails_Result">
+          <ScalarProperty Name="OrderID" ColumnName="OrderID" />
+          <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+          <ScalarProperty Name="ExpectedShippingDate" ColumnName="ExpectedShippingDate" />
+          <ScalarProperty Name="ModelTypeID" ColumnName="ModelTypeID" />
+          <ScalarProperty Name="ModelNumber" ColumnName="ModelNumber" />
+          <ScalarProperty Name="SerialNumber" ColumnName="SerialNumber" />
+          <ScalarProperty Name="ProcessTypeID" ColumnName="ProcessTypeID" />
+          <ScalarProperty Name="MetalID" ColumnName="MetalID" />
+          <ScalarProperty Name="MetalOther" ColumnName="MetalOther" />
+          <ScalarProperty Name="FingerSizeID" ColumnName="FingerSizeID" />
+          <ScalarProperty Name="PriorityID" ColumnName="PriorityID" />
+          <ScalarProperty Name="RingTypeID" ColumnName="RingTypeID" />
+          <ScalarProperty Name="ModelToMatch" ColumnName="ModelToMatch" />
+          <ScalarProperty Name="IsFinishAtSomePoint" ColumnName="IsFinishAtSomePoint" />
+          <ScalarProperty Name="AdditionalInfo" ColumnName="AdditionalInfo" />
+          <ScalarProperty Name="IsPF" ColumnName="IsPF" />
+          <ScalarProperty Name="HeadSize" ColumnName="HeadSize" />
+          <ScalarProperty Name="IsCADRequested" ColumnName="IsCADRequested" />
+          <ScalarProperty Name="IsSampleProvided" ColumnName="IsSampleProvided" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="AssignedTo" ColumnName="AssignedTo" />
+          <ScalarProperty Name="OrderStatusID" ColumnName="OrderStatusID" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="ModifyDate" ColumnName="ModifyDate" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="CreateByUserName" ColumnName="CreateByUserName" />
+          <ScalarProperty Name="ModelCode" ColumnName="ModelCode" />
+          <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
+          <ScalarProperty Name="CustomerEmail" ColumnName="CustomerEmail" />
+          <ScalarProperty Name="ProcessType" ColumnName="ProcessType" />
+          <ScalarProperty Name="MetalName" ColumnName="MetalName" />
+          <ScalarProperty Name="Size" ColumnName="Size" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="RingType" ColumnName="RingType" />
+          <ScalarProperty Name="AssignedToUserName" ColumnName="AssignedToUserName" />
+          <ScalarProperty Name="TMUserID" ColumnName="TMUserID" />
+          <ScalarProperty Name="TMUserName" ColumnName="TMUserName" />
+          <ScalarProperty Name="TMEmail" ColumnName="TMEmail" />
+          <ScalarProperty Name="ModelSubTypeID" ColumnName="ModelSubTypeID" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="Length" ColumnName="Length" />
+          <ScalarProperty Name="LengthMeasurement" ColumnName="LengthMeasurement" />
+          <ScalarProperty Name="IsExistingModel" ColumnName="IsExistingModel" />
+          <ScalarProperty Name="NoOfSamples" ColumnName="NoOfSamples" />
+          <ScalarProperty Name="SampleSerialNumber" ColumnName="SampleSerialNumber" />
+          <ScalarProperty Name="CountSampleNotReturned" ColumnName="CountSampleNotReturned" />
+          <ScalarProperty Name="FingerSizeOther" ColumnName="FingerSizeOther" />
+          <ScalarProperty Name="QuantityOther" ColumnName="QuantityOther" />
+          <ScalarProperty Name="MakeExactCopies" ColumnName="MakeExactCopies" />
+          <ScalarProperty Name="CurveType" ColumnName="CurveType" />
+          <ScalarProperty Name="TailoredType" ColumnName="TailoredType" />
+          <ScalarProperty Name="MakeExactCopiesSample" ColumnName="MakeExactCopiesSample" />
+          <ScalarProperty Name="IsStoneProvided" ColumnName="IsStoneProvided" />
+          <ScalarProperty Name="StoneDescription" ColumnName="StoneDescription" />
+          <ScalarProperty Name="SettingInstructions" ColumnName="SettingInstructions" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GetOrders" FunctionName="RiverMount_CollaborationDBModel.Store.Order_Select">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RiverMount_CollaborationDBModel.Orders_Result">
+          <ScalarProperty Name="OrderID" ColumnName="OrderID" />
+          <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+          <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
+          <ScalarProperty Name="ModelTypeID" ColumnName="ModelTypeID" />
+          <ScalarProperty Name="ModelNumber" ColumnName="ModelNumber" />
+          <ScalarProperty Name="SerialNumber" ColumnName="SerialNumber" />
+          <ScalarProperty Name="ProcessTypeID" ColumnName="ProcessTypeID" />
+          <ScalarProperty Name="MetalID" ColumnName="MetalID" />
+          <ScalarProperty Name="MetalOther" ColumnName="MetalOther" />
+          <ScalarProperty Name="FingerSizeID" ColumnName="FingerSizeID" />
+          <ScalarProperty Name="PriorityID" ColumnName="PriorityID" />
+          <ScalarProperty Name="RingTypeID" ColumnName="RingTypeID" />
+          <ScalarProperty Name="ModelToMatch" ColumnName="ModelToMatch" />
+          <ScalarProperty Name="IsFinishAtSomePoint" ColumnName="IsFinishAtSomePoint" />
+          <ScalarProperty Name="AdditionalInfo" ColumnName="AdditionalInfo" />
+          <ScalarProperty Name="IsPF" ColumnName="IsPF" />
+          <ScalarProperty Name="HeadSize" ColumnName="HeadSize" />
+          <ScalarProperty Name="IsCADRequested" ColumnName="IsCADRequested" />
+          <ScalarProperty Name="IsSampleProvided" ColumnName="IsSampleProvided" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="AssignedTo" ColumnName="AssignedTo" />
+          <ScalarProperty Name="OrderStatusID" ColumnName="OrderStatusID" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="ModifyDate" ColumnName="ModifyDate" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="CreateByUserName" ColumnName="CreateByUserName" />
+          <ScalarProperty Name="AssignedToUserName" ColumnName="AssignedToUserName" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="Frequency" ColumnName="Frequency" />
+          <ScalarProperty Name="ModelSubTypeID" ColumnName="ModelSubTypeID" />
+          <ScalarProperty Name="Length" ColumnName="Length" />
+          <ScalarProperty Name="LengthMeasurement" ColumnName="LengthMeasurement" />
+          <ScalarProperty Name="IsExistingModel" ColumnName="IsExistingModel" />
+          <ScalarProperty Name="NoOfSamples" ColumnName="NoOfSamples" />
+          <ScalarProperty Name="CountSampleNotReturned" ColumnName="CountSampleNotReturned" />
+          <ScalarProperty Name="FingerSizeOther" ColumnName="FingerSizeOther" />
+          <ScalarProperty Name="QuantityOther" ColumnName="QuantityOther" />
+          <ScalarProperty Name="MakeExactCopies" ColumnName="MakeExactCopies" />
+          <ScalarProperty Name="CurveType" ColumnName="CurveType" />
+          <ScalarProperty Name="TailoredType" ColumnName="TailoredType" />
+          <ScalarProperty Name="ExpectedShippingDate" ColumnName="ExpectedShippingDate" />
+          <ScalarProperty Name="TMUserID" ColumnName="TMUserID" />
+          <ScalarProperty Name="MakeExactCopiesSample" ColumnName="MakeExactCopiesSample" />
+          <ScalarProperty Name="IsStoneProvided" ColumnName="IsStoneProvided" />
+          <ScalarProperty Name="StoneDescription" ColumnName="StoneDescription" />
+          <ScalarProperty Name="SettingInstructions" ColumnName="SettingInstructions" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GetSpecimens" FunctionName="RiverMount_CollaborationDBModel.Store.Specimen_Select" />
+    <FunctionImportMapping FunctionImportName="GetUserInfo" FunctionName="RiverMount_CollaborationDBModel.Store.User_Select" />
+    <FunctionImportMapping FunctionImportName="ModifyUser" FunctionName="RiverMount_CollaborationDBModel.Store.User_Update" />
+    <EntitySetMapping Name="Orders">
+      <EntityTypeMapping TypeName="RiverMount_CollaborationDBModel.Order">
+        <MappingFragment StoreEntitySet="Orders">
+          <ScalarProperty Name="ExpectedShippingDate" ColumnName="ExpectedShippingDate" />
+          <ScalarProperty Name="ModifyDate" ColumnName="ModifyDate" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="OrderStatusID" ColumnName="OrderStatusID" />
+          <ScalarProperty Name="AssignedTo" ColumnName="AssignedTo" />
+          <ScalarProperty Name="TMUserID" ColumnName="TMUserID" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="SettingInstructions" ColumnName="SettingInstructions" />
+          <ScalarProperty Name="StoneDescription" ColumnName="StoneDescription" />
+          <ScalarProperty Name="IsStoneProvided" ColumnName="IsStoneProvided" />
+          <ScalarProperty Name="MakeExactCopiesSample" ColumnName="MakeExactCopiesSample" />
+          <ScalarProperty Name="NoOfSamples" ColumnName="NoOfSamples" />
+          <ScalarProperty Name="IsSampleProvided" ColumnName="IsSampleProvided" />
+          <ScalarProperty Name="IsCADRequested" ColumnName="IsCADRequested" />
+          <ScalarProperty Name="HeadSize" ColumnName="HeadSize" />
+          <ScalarProperty Name="IsPF" ColumnName="IsPF" />
+          <ScalarProperty Name="AdditionalInfo" ColumnName="AdditionalInfo" />
+          <ScalarProperty Name="IsFinishAtSomePoint" ColumnName="IsFinishAtSomePoint" />
+          <ScalarProperty Name="TailoredType" ColumnName="TailoredType" />
+          <ScalarProperty Name="CurveType" ColumnName="CurveType" />
+          <ScalarProperty Name="ModelToMatch" ColumnName="ModelToMatch" />
+          <ScalarProperty Name="IsExistingModel" ColumnName="IsExistingModel" />
+          <ScalarProperty Name="RingTypeID" ColumnName="RingTypeID" />
+          <ScalarProperty Name="MakeExactCopies" ColumnName="MakeExactCopies" />
+          <ScalarProperty Name="PriorityID" ColumnName="PriorityID" />
+          <ScalarProperty Name="LengthMeasurement" ColumnName="LengthMeasurement" />
+          <ScalarProperty Name="Length" ColumnName="Length" />
+          <ScalarProperty Name="QuantityOther" ColumnName="QuantityOther" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="FingerSizeOther" ColumnName="FingerSizeOther" />
+          <ScalarProperty Name="FingerSizeID" ColumnName="FingerSizeID" />
+          <ScalarProperty Name="MetalOther" ColumnName="MetalOther" />
+          <ScalarProperty Name="MetalID" ColumnName="MetalID" />
+          <ScalarProperty Name="ProcessTypeID" ColumnName="ProcessTypeID" />
+          <ScalarProperty Name="SerialNumber" ColumnName="SerialNumber" />
+          <ScalarProperty Name="ModelNumber" ColumnName="ModelNumber" />
+          <ScalarProperty Name="ModelSubTypeID" ColumnName="ModelSubTypeID" />
+          <ScalarProperty Name="ModelTypeID" ColumnName="ModelTypeID" />
+          <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+          <ScalarProperty Name="OrderID" ColumnName="OrderID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="CreateCustomer" FunctionName="RiverMount_CollaborationDBModel.Store.Customer_Insert" />
+    <FunctionImportMapping FunctionImportName="DeleteCustomer" FunctionName="RiverMount_CollaborationDBModel.Store.Customer_Delete" />
+    <FunctionImportMapping FunctionImportName="ModifyCustomer" FunctionName="RiverMount_CollaborationDBModel.Store.Customer_Update" />
+    <FunctionImportMapping FunctionImportName="ImportCustomer" FunctionName="RiverMount_CollaborationDBModel.Store.Import_Customer" />
+    <EntitySetMapping Name="Customers">
+      <EntityTypeMapping TypeName="RiverMount_CollaborationDBModel.Customer">
+        <MappingFragment StoreEntitySet="Customer">
+          <ScalarProperty Name="ModifyDate" ColumnName="ModifyDate" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="CustomerEmail" ColumnName="CustomerEmail" />
+          <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
+          <ScalarProperty Name="ReferenceCode" ColumnName="ReferenceCode" />
+          <ScalarProperty Name="CustomerCode" ColumnName="CustomerCode" />
+          <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SampleStatus">
+      <EntityTypeMapping TypeName="RiverMount_CollaborationDBModel.SampleStatu">
+        <MappingFragment StoreEntitySet="SampleStatus">
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="ModifyDate" ColumnName="ModifyDate" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="SampleStatusName" ColumnName="SampleStatusName" />
+          <ScalarProperty Name="SampleStatusID" ColumnName="SampleStatusID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SamplesTrackings">
+      <EntityTypeMapping TypeName="RiverMount_CollaborationDBModel.SamplesTracking">
+        <MappingFragment StoreEntitySet="SamplesTracking">
+          <ScalarProperty Name="Updatedby" ColumnName="Updatedby" />
+          <ScalarProperty Name="ModifyDate" ColumnName="ModifyDate" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="SampleStatusID" ColumnName="SampleStatusID" />
+          <ScalarProperty Name="SampleID" ColumnName="SampleID" />
+          <ScalarProperty Name="SampleTrackID" ColumnName="SampleTrackID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="CreateSampleStatus" FunctionName="RiverMount_CollaborationDBModel.Store.SampleStatus_Insert" />
+    <FunctionImportMapping FunctionImportName="ModifySampleStatus" FunctionName="RiverMount_CollaborationDBModel.Store.SampleStatus_Update" />
+    <FunctionImportMapping FunctionImportName="DeleteSampleStatus" FunctionName="RiverMount_CollaborationDBModel.Store.SampleStatus_Delete" />
+    <FunctionImportMapping FunctionImportName="GetSampleStatus" FunctionName="RiverMount_CollaborationDBModel.Store.SampleStatus_Select" />
+    <FunctionImportMapping FunctionImportName="SamplesTracking_Insert" FunctionName="RiverMount_CollaborationDBModel.Store.SamplesTracking_Insert" />
+    <FunctionImportMapping FunctionImportName="SamplesTracking_Update" FunctionName="RiverMount_CollaborationDBModel.Store.SamplesTracking_Update" />
+    <FunctionImportMapping FunctionImportName="SamplesTracking_Select" FunctionName="RiverMount_CollaborationDBModel.Store.SamplesTracking_Select" />
+    <FunctionImportMapping FunctionImportName="SamplesTracking_Result" FunctionName="RiverMount_CollaborationDBModel.Store.SamplesTracking_Result">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RiverMount_CollaborationDBModel.SampleTracking_Result">
+          <ScalarProperty Name="SampleTrackID" ColumnName="SampleTrackID" />
+          <ScalarProperty Name="SampleID" ColumnName="SampleID" />
+          <ScalarProperty Name="SampleStatusID" ColumnName="SampleStatusID" />
+          <ScalarProperty Name="SampleSerialNumber" ColumnName="SampleSerialNumber" />
+          <ScalarProperty Name="SampleStatusName" ColumnName="SampleStatusName" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <EntitySetMapping Name="TicketThreads">
+      <EntityTypeMapping TypeName="RiverMount_CollaborationDBModel.TicketThread">
+        <MappingFragment StoreEntitySet="TicketThread">
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="ModifyDate" ColumnName="ModifyDate" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="AssignedTo" ColumnName="AssignedTo" />
+          <ScalarProperty Name="LastModifiedBy" ColumnName="LastModifiedBy" />
+          <ScalarProperty Name="ClosingRemarks" ColumnName="ClosingRemarks" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Subject" ColumnName="Subject" />
+          <ScalarProperty Name="TicketThreadID" ColumnName="TicketThreadID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="Ticket_Insert" FunctionName="RiverMount_CollaborationDBModel.Store.Ticket_Insert" />
+    <FunctionImportMapping FunctionImportName="Ticket_Select" FunctionName="RiverMount_CollaborationDBModel.Store.Ticket_Select">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RiverMount_CollaborationDBModel.Tickets_Result">
+          <ScalarProperty Name="TicketID" ColumnName="TicketID" />
+          <ScalarProperty Name="TicketText" ColumnName="TicketText" />
+          <ScalarProperty Name="TicketThreadID" ColumnName="TicketThreadID" />
+          <ScalarProperty Name="AssignedFromUserID" ColumnName="AssignedFromUserID" />
+          <ScalarProperty Name="AssignedFromUserName" ColumnName="AssignedFromUserName" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="LocationURL" ColumnName="LocationURL" />
+          <ScalarProperty Name="ContentType" ColumnName="ContentType" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="Ticket_SelectByAssignedTo" FunctionName="RiverMount_CollaborationDBModel.Store.Ticket_SelectByAssignedTo">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RiverMount_CollaborationDBModel.Tickets_Result">
+          <ScalarProperty Name="TicketID" ColumnName="TicketID" />
+          <ScalarProperty Name="TicketText" ColumnName="TicketText" />
+          <ScalarProperty Name="TicketThreadID" ColumnName="TicketThreadID" />
+          <ScalarProperty Name="AssignedFromUserID" ColumnName="AssignedFromUserID" />
+          <ScalarProperty Name="AssignedFromUserName" ColumnName="AssignedFromUserName" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="LocationURL" ColumnName="LocationURL" />
+          <ScalarProperty Name="ContentType" ColumnName="ContentType" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="Ticket_SelectByReadStatus" FunctionName="RiverMount_CollaborationDBModel.Store.Ticket_SelectByReadStatus">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RiverMount_CollaborationDBModel.Tickets_Result">
+          <ScalarProperty Name="TicketID" ColumnName="TicketID" />
+          <ScalarProperty Name="TicketText" ColumnName="TicketText" />
+          <ScalarProperty Name="TicketThreadID" ColumnName="TicketThreadID" />
+          <ScalarProperty Name="AssignedFromUserID" ColumnName="AssignedFromUserID" />
+          <ScalarProperty Name="AssignedFromUserName" ColumnName="AssignedFromUserName" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="LocationURL" ColumnName="LocationURL" />
+          <ScalarProperty Name="ContentType" ColumnName="ContentType" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="TicketAttachment_Insert" FunctionName="RiverMount_CollaborationDBModel.Store.TicketAttachment_Insert" />
+    <FunctionImportMapping FunctionImportName="TicketThread_Insert" FunctionName="RiverMount_CollaborationDBModel.Store.TicketThread_Insert" />
+    <FunctionImportMapping FunctionImportName="TicketThread_Select" FunctionName="RiverMount_CollaborationDBModel.Store.TicketThread_Select">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RiverMount_CollaborationDBModel.TicketThreads_Result">
+          <ScalarProperty Name="TicketThreadID" ColumnName="TicketThreadID" />
+          <ScalarProperty Name="NoOfTickets" ColumnName="NoOfTickets" />
+          <ScalarProperty Name="HasUnReadTickets" ColumnName="HasUnReadTickets" />
+          <ScalarProperty Name="LastModifiedUserID" ColumnName="LastModifiedUserID" />
+          <ScalarProperty Name="LastModifiedUserName" ColumnName="LastModifiedUserName" />
+          <ScalarProperty Name="AssignedToUserID" ColumnName="AssignedToUserID" />
+          <ScalarProperty Name="AssignedToUserName" ColumnName="AssignedToUserName" />
+          <ScalarProperty Name="ModifyDate" ColumnName="ModifyDate" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="TicketThread_Update" FunctionName="RiverMount_CollaborationDBModel.Store.TicketThread_Update" />
+    <FunctionImportMapping FunctionImportName="TicketTo_MarkRead" FunctionName="RiverMount_CollaborationDBModel.Store.TicketTo_MarkRead" />
+    <FunctionImportMapping FunctionImportName="Create_CaseForTicket" FunctionName="RiverMount_CollaborationDBModel.Store.Create_CaseForTicket" />
+    <FunctionImportMapping FunctionImportName="TicketParticipants_Select" FunctionName="RiverMount_CollaborationDBModel.Store.TicketParticipants_Select">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RiverMount_CollaborationDBModel.TicketParticipants_Result">
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="RoleID" ColumnName="RoleID" />
+          <ScalarProperty Name="EMail" ColumnName="EMail" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <EntitySetMapping Name="Tickets">
+      <EntityTypeMapping TypeName="RiverMount_CollaborationDBModel.Ticket">
+        <MappingFragment StoreEntitySet="Tickets">
+          <ScalarProperty Name="ModifyDate" ColumnName="ModifyDate" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="HasAttachment" ColumnName="HasAttachment" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="AssignedFrom" ColumnName="AssignedFrom" />
+          <ScalarProperty Name="TicketText" ColumnName="TicketText" />
+          <ScalarProperty Name="TicketID" ColumnName="TicketID" />
+          <ScalarProperty Name="TicketThreadID" ColumnName="TicketThreadID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TicketsAttachments">
+      <EntityTypeMapping TypeName="RiverMount_CollaborationDBModel.TicketsAttachment">
+        <MappingFragment StoreEntitySet="TicketsAttachment">
+          <ScalarProperty Name="ModifyDate" ColumnName="ModifyDate" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="ContentType" ColumnName="ContentType" />
+          <ScalarProperty Name="LocationURL" ColumnName="LocationURL" />
+          <ScalarProperty Name="TicketID" ColumnName="TicketID" />
+          <ScalarProperty Name="AttachmentID" ColumnName="AttachmentID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TicketToes">
+      <EntityTypeMapping TypeName="RiverMount_CollaborationDBModel.TicketTo">
+        <MappingFragment StoreEntitySet="TicketTo">
+          <ScalarProperty Name="ModifyDate" ColumnName="ModifyDate" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="ReadTime" ColumnName="ReadTime" />
+          <ScalarProperty Name="HasRead" ColumnName="HasRead" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="AssignedTo" ColumnName="AssignedTo" />
+          <ScalarProperty Name="TicketID" ColumnName="TicketID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="Create_CaseForTicketNew" FunctionName="RiverMount_CollaborationDBModel.Store.Create_CaseForTicket" />
+    <FunctionImportMapping FunctionImportName="Ticket_InsertNew" FunctionName="RiverMount_CollaborationDBModel.Store.Ticket_Insert" />
+    <FunctionImportMapping FunctionImportName="TicketThread_UpdateAssign" FunctionName="RiverMount_CollaborationDBModel.Store.TicketThread_UpdateAssign" />
+    <FunctionImportMapping FunctionImportName="TicketThread_UpdateAssignNew" FunctionName="RiverMount_CollaborationDBModel.Store.TicketThread_UpdateAssign" />
+    <EntitySetMapping Name="ModelTypes">
+      <EntityTypeMapping TypeName="RiverMount_CollaborationDBModel.ModelType">
+        <MappingFragment StoreEntitySet="ModelType">
+          <ScalarProperty Name="ModifyDate" ColumnName="ModifyDate" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="SortOrder" ColumnName="SortOrder" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="ModelCode" ColumnName="ModelCode" />
+          <ScalarProperty Name="ModelTypeID" ColumnName="ModelTypeID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="GetGetModelTypes" FunctionName="RiverMount_CollaborationDBModel.Store.ModelType_Select" />
+    <FunctionImportMapping FunctionImportName="TicketAttachment_InsertNew" FunctionName="RiverMount_CollaborationDBModel.Store.TicketAttachment_Insert" />
+    <EntitySetMapping Name="SamplesTrackingHistories">
+      <EntityTypeMapping TypeName="RiverMount_CollaborationDBModel.SamplesTrackingHistory">
+        <MappingFragment StoreEntitySet="SamplesTrackingHistory">
+          <ScalarProperty Name="Updatedby" ColumnName="Updatedby" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="SampleTrackHistoryID" ColumnName="SampleTrackHistoryID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="FK_SamplesTrackingHistory_Samples" TypeName="RiverMount_CollaborationDBModel.FK_SamplesTrackingHistory_Samples" StoreEntitySet="SamplesTrackingHistory">
+      <EndProperty Name="SamplesTrackingHistory">
+        <ScalarProperty Name="SampleTrackHistoryID" ColumnName="SampleTrackHistoryID" />
+      </EndProperty>
+      <EndProperty Name="Sample">
+        <ScalarProperty Name="SampleID" ColumnName="SampleID" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_SamplesTrackingHistory_SampleStatus" TypeName="RiverMount_CollaborationDBModel.FK_SamplesTrackingHistory_SampleStatus" StoreEntitySet="SamplesTrackingHistory">
+      <EndProperty Name="SamplesTrackingHistory">
+        <ScalarProperty Name="SampleTrackHistoryID" ColumnName="SampleTrackHistoryID" />
+      </EndProperty>
+      <EndProperty Name="SampleStatu">
+        <ScalarProperty Name="SampleStatusID" ColumnName="SampleStatusID" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <FunctionImportMapping FunctionImportName="SamplesTracking_MassUpdate" FunctionName="RiverMount_CollaborationDBModel.Store.SamplesTracking_MassUpdate" />
+    <FunctionImportMapping FunctionImportName="SamplesTrackingHistory_Result" FunctionName="RiverMount_CollaborationDBModel.Store.SamplesTrackingHistory_Result">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RiverMount_CollaborationDBModel.SamplesTrackingHistory_Result">
+          <ScalarProperty Name="SampleID" ColumnName="SampleID" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="FLName" ColumnName="FLName" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="SampleSerialNumber" ColumnName="SampleSerialNumber" />
+          <ScalarProperty Name="SampleStatusID" ColumnName="SampleStatusID" />
+          <ScalarProperty Name="SampleStatusName" ColumnName="SampleStatusName" />
+          <ScalarProperty Name="SampleTrackHistoryID" ColumnName="SampleTrackHistoryID" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="CreateOrderNew" FunctionName="RiverMount_CollaborationDBModel.Store.Create_Order" />
+    <FunctionImportMapping FunctionImportName="CreateOrder" FunctionName="RiverMount_CollaborationDBModel.Store.Create_Order" />
+    <FunctionImportMapping FunctionImportName="Create_Ticket" FunctionName="RiverMount_CollaborationDBModel.Store.Create_Ticket" />
+    <FunctionImportMapping FunctionImportName="Ticket_SelectByUserID" FunctionName="RiverMount_CollaborationDBModel.Store.Ticket_SelectByUserID">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RiverMount_CollaborationDBModel.Tickets_Result">
+          <ScalarProperty Name="TicketID" ColumnName="TicketID" />
+          <ScalarProperty Name="TicketText" ColumnName="TicketText" />
+          <ScalarProperty Name="TicketThreadID" ColumnName="TicketThreadID" />
+          <ScalarProperty Name="AssignedFromUserID" ColumnName="AssignedFromUserID" />
+          <ScalarProperty Name="AssignedFromUserName" ColumnName="AssignedFromUserName" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="LocationURL" ColumnName="LocationURL" />
+          <ScalarProperty Name="ContentType" ColumnName="ContentType" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="UpdateOrderStatus" FunctionName="RiverMount_CollaborationDBModel.Store.Update_OrderStatus" />
+    <FunctionImportMapping FunctionImportName="InsertMessage" FunctionName="RiverMount_CollaborationDBModel.Store.Create_Message" />
+    <FunctionImportMapping FunctionImportName="TicketThread_MassUpdate" FunctionName="RiverMount_CollaborationDBModel.Store.TicketThread_MassUpdate" />
+    <FunctionImportMapping FunctionImportName="TicketThreadClosed_Select" FunctionName="RiverMount_CollaborationDBModel.Store.TicketThreadClosed_Select">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RiverMount_CollaborationDBModel.TicketThreads_Result">
+          <ScalarProperty Name="TicketThreadID" ColumnName="TicketThreadID" />
+          <ScalarProperty Name="NoOfTickets" ColumnName="NoOfTickets" />
+          <ScalarProperty Name="HasUnReadTickets" ColumnName="HasUnReadTickets" />
+          <ScalarProperty Name="LastModifiedUserID" ColumnName="LastModifiedUserID" />
+          <ScalarProperty Name="LastModifiedUserName" ColumnName="LastModifiedUserName" />
+          <ScalarProperty Name="AssignedToUserID" ColumnName="AssignedToUserID" />
+          <ScalarProperty Name="AssignedToUserName" ColumnName="AssignedToUserName" />
+          <ScalarProperty Name="ModifyDate" ColumnName="ModifyDate" />
+          <ScalarProperty Name="Subject" ColumnName="Subject" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="ModifyOrder" FunctionName="RiverMount_CollaborationDBModel.Store.Update_Order" />
+    <FunctionImportMapping FunctionImportName="ModifyOrderDetails" FunctionName="RiverMount_CollaborationDBModel.Store.Update_OrderDetails" />
+    <FunctionImportMapping FunctionImportName="OrderCADTop2_Select" FunctionName="RiverMount_CollaborationDBModel.Store.OrderCADTop2_Select" />
+    <FunctionImportMapping FunctionImportName="MessageOrder_Select" FunctionName="RiverMount_CollaborationDBModel.Store.MessageOrder_Select" />
+    <FunctionImportMapping FunctionImportName="GetCancelledOrders" FunctionName="RiverMount_CollaborationDBModel.Store.CancelOrder_Select">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RiverMount_CollaborationDBModel.Orders_Result">
+          <ScalarProperty Name="OrderID" ColumnName="OrderID" />
+          <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+          <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
+          <ScalarProperty Name="ModelTypeID" ColumnName="ModelTypeID" />
+          <ScalarProperty Name="ModelNumber" ColumnName="ModelNumber" />
+          <ScalarProperty Name="SerialNumber" ColumnName="SerialNumber" />
+          <ScalarProperty Name="ProcessTypeID" ColumnName="ProcessTypeID" />
+          <ScalarProperty Name="MetalID" ColumnName="MetalID" />
+          <ScalarProperty Name="MetalOther" ColumnName="MetalOther" />
+          <ScalarProperty Name="FingerSizeID" ColumnName="FingerSizeID" />
+          <ScalarProperty Name="PriorityID" ColumnName="PriorityID" />
+          <ScalarProperty Name="RingTypeID" ColumnName="RingTypeID" />
+          <ScalarProperty Name="ModelToMatch" ColumnName="ModelToMatch" />
+          <ScalarProperty Name="IsFinishAtSomePoint" ColumnName="IsFinishAtSomePoint" />
+          <ScalarProperty Name="AdditionalInfo" ColumnName="AdditionalInfo" />
+          <ScalarProperty Name="IsPF" ColumnName="IsPF" />
+          <ScalarProperty Name="HeadSize" ColumnName="HeadSize" />
+          <ScalarProperty Name="IsCADRequested" ColumnName="IsCADRequested" />
+          <ScalarProperty Name="IsSampleProvided" ColumnName="IsSampleProvided" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="AssignedTo" ColumnName="AssignedTo" />
+          <ScalarProperty Name="OrderStatusID" ColumnName="OrderStatusID" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="ModifyDate" ColumnName="ModifyDate" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="CreateByUserName" ColumnName="CreateByUserName" />
+          <ScalarProperty Name="AssignedToUserName" ColumnName="AssignedToUserName" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="Frequency" ColumnName="Frequency" />
+          <ScalarProperty Name="ModelSubTypeID" ColumnName="ModelSubTypeID" />
+          <ScalarProperty Name="Length" ColumnName="Length" />
+          <ScalarProperty Name="LengthMeasurement" ColumnName="LengthMeasurement" />
+          <ScalarProperty Name="IsExistingModel" ColumnName="IsExistingModel" />
+          <ScalarProperty Name="NoOfSamples" ColumnName="NoOfSamples" />
+          <ScalarProperty Name="CountSampleNotReturned" ColumnName="CountSampleNotReturned" />
+          <ScalarProperty Name="FingerSizeOther" ColumnName="FingerSizeOther" />
+          <ScalarProperty Name="QuantityOther" ColumnName="QuantityOther" />
+          <ScalarProperty Name="MakeExactCopies" ColumnName="MakeExactCopies" />
+          <ScalarProperty Name="CurveType" ColumnName="CurveType" />
+          <ScalarProperty Name="TailoredType" ColumnName="TailoredType" />
+          <ScalarProperty Name="ExpectedShippingDate" ColumnName="ExpectedShippingDate" />
+          <ScalarProperty Name="TMUserID" ColumnName="TMUserID" />
+          <ScalarProperty Name="MakeExactCopiesSample" ColumnName="MakeExactCopiesSample" />
+          <ScalarProperty Name="IsStoneProvided" ColumnName="IsStoneProvided" />
+          <ScalarProperty Name="StoneDescription" ColumnName="StoneDescription" />
+          <ScalarProperty Name="SettingInstructions" ColumnName="SettingInstructions" />
+          <ScalarProperty Name="ParticipantsUserID" ColumnName="ParticipantsUserID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="TicketTo_Insert" FunctionName="RiverMount_CollaborationDBModel.Store.TicketTo_Insert" />
+  </EntityContainerMapping>
+</Mapping>

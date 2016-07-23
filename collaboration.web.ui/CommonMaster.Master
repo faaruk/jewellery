@@ -1,0 +1,50 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="CommonMaster.Master.cs"
+    Inherits="Collaboration.Web.UI.CommonMaster" %>
+
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="asp" %>
+<%@ Register Src="UserControl/UC_Header.ascx" TagName="Header" TagPrefix="uc1" %>
+<%@ Register Src="UserControl/Footer.ascx" TagName="Footer" TagPrefix="uc2" %>
+<!DOCTYPE html>
+<html lang="en">
+<head runat="server" id="header11">
+    <meta content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <meta name="author" content="Mosaddek" />
+    <meta name="keyword" content="FlatLab, Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina" />
+    <title>River Mounts Jewellery</title>
+    <link href="<%# ResolveUrl("~/Styles/bootstrap.min.css") %>" rel="stylesheet" />
+    <link href="<%# ResolveUrl("~/Styles/bootstrap-reset.css") %>" rel="stylesheet" />
+    <link href="<%# ResolveUrl("~/Styles/font-awesome.css") %>" rel="stylesheet" />
+    <link href="<%# ResolveUrl("~/Styles/style.css") %>" rel="stylesheet" />
+    <link href="<%# ResolveUrl("~/Styles/style-responsive.css") %>" rel="stylesheet" />
+    <link href="<%# ResolveUrl("~/assets/font-awesome/css/font-awesome.css") %>" rel="stylesheet" />
+    <link rel="stylesheet" href="<%# ResolveUrl("~/assets/data-tables/DT_bootstrap.css") %>" />
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 tooltipss and media queries -->
+    <!--[if lt IE 9]>
+      <script src="~/js/html5shiv.js"></script>
+      <script src="~/js/respond.min.js"></script>
+    <![endif]-->
+  <%--  <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>--%>
+</head>
+<body>
+    <form id="Form1" class="form-Master" runat="server" enctype="multipart/form-data">
+    <asp:ToolkitScriptManager ID="ToolkitScriptManager1" runat="server" EnablePartialRendering="true">
+    </asp:ToolkitScriptManager>
+    <div id="container">
+        <!--header start-->
+          <a href="../Default.aspx" class="logo">
+        <img src="../img/logo_river.png" alt="River Mounts" /></a>
+        <!--header end-->
+        <!--sidebar end-->
+        <!--main content start-->
+        <div >
+            <div class="wrapper" style="margin-top:60px;width:auto">
+                <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+            </div>
+        </div>
+    </div>
+    </form>
+</body>
+</html>

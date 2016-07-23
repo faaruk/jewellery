@@ -1,0 +1,384 @@
+.dxWeb_xrdvRibbonIcon_BtnFirstPage_Office2010Silver,
+.dxWeb_xrdvRibbonIcon_BtnFirstPageDisabled_Office2010Silver,
+.dxWeb_xrdvRibbonIcon_BtnFirstPageLarge_Office2010Silver,
+.dxWeb_xrdvRibbonIcon_BtnFirstPageLargeDisabled_Office2010Silver,
+.dxWeb_xrdvRibbonIcon_BtnLastPage_Office2010Silver,
+.dxWeb_xrdvRibbonIcon_BtnLastPageDisabled_Office2010Silver,
+.dxWeb_xrdvRibbonIcon_BtnLastPageLarge_Office2010Silver,
+.dxWeb_xrdvRibbonIcon_BtnLastPageLargeDisabled_Office2010Silver,
+.dxWeb_xrdvRibbonIcon_BtnNextPage_Office2010Silver,
+.dxWeb_xrdvRibbonIcon_BtnNextPageDisabled_Office2010Silver,
+.dxWeb_xrdvRibbonIcon_BtnNextPageLarge_Office2010Silver,
+.dxWeb_xrdvRibbonIcon_BtnNextPageLargeDisabled_Office2010Silver,
+.dxWeb_xrdvRibbonIcon_BtnPrevPage_Office2010Silver,
+.dxWeb_xrdvRibbonIcon_BtnPrevPageDisabled_Office2010Silver,
+.dxWeb_xrdvRibbonIcon_BtnPrevPageLarge_Office2010Silver,
+.dxWeb_xrdvRibbonIcon_BtnPrevPageLargeDisabled_Office2010Silver,
+.dxWeb_xrdvRibbonIcon_BtnPrint_Office2010Silver,
+.dxWeb_xrdvRibbonIcon_BtnPrintDisabled_Office2010Silver,
+.dxWeb_xrdvRibbonIcon_BtnPrintLarge_Office2010Silver,
+.dxWeb_xrdvRibbonIcon_BtnPrintLargeDisabled_Office2010Silver,
+.dxWeb_xrdvRibbonIcon_BtnPrintPage_Office2010Silver,
+.dxWeb_xrdvRibbonIcon_BtnPrintPageDisabled_Office2010Silver,
+.dxWeb_xrdvRibbonIcon_BtnPrintPageLarge_Office2010Silver,
+.dxWeb_xrdvRibbonIcon_BtnPrintPageLargeDisabled_Office2010Silver,
+.dxWeb_xrdvRibbonIcon_BtnSave_Office2010Silver,
+.dxWeb_xrdvRibbonIcon_BtnSaveDisabled_Office2010Silver,
+.dxWeb_xrdvRibbonIcon_BtnSaveLarge_Office2010Silver,
+.dxWeb_xrdvRibbonIcon_BtnSaveLargeDisabled_Office2010Silver,
+.dxWeb_xrdvRibbonIcon_BtnSaveWindow_Office2010Silver,
+.dxWeb_xrdvRibbonIcon_BtnSaveWindowDisabled_Office2010Silver,
+.dxWeb_xrdvRibbonIcon_BtnSaveWindowLarge_Office2010Silver,
+.dxWeb_xrdvRibbonIcon_BtnSaveWindowLargeDisabled_Office2010Silver,
+.dxWeb_xrdvRibbonIcon_BtnSearch_Office2010Silver,
+.dxWeb_xrdvRibbonIcon_BtnSearchDisabled_Office2010Silver,
+.dxWeb_xrdvRibbonIcon_BtnSearchLarge_Office2010Silver,
+.dxWeb_xrdvRibbonIcon_BtnSearchLargeDisabled_Office2010Silver,
+.dxWeb_xrdvRibbonIcon_ExportToCsv_Office2010Silver,
+.dxWeb_xrdvRibbonIcon_ExportToCsvLarge_Office2010Silver,
+.dxWeb_xrdvRibbonIcon_ExportToHtml_Office2010Silver,
+.dxWeb_xrdvRibbonIcon_ExportToHtmlLarge_Office2010Silver,
+.dxWeb_xrdvRibbonIcon_ExportToImg_Office2010Silver,
+.dxWeb_xrdvRibbonIcon_ExportToImgLarge_Office2010Silver,
+.dxWeb_xrdvRibbonIcon_ExportToMht_Office2010Silver,
+.dxWeb_xrdvRibbonIcon_ExportToMhtLarge_Office2010Silver,
+.dxWeb_xrdvRibbonIcon_ExportToPdf_Office2010Silver,
+.dxWeb_xrdvRibbonIcon_ExportToPdfLarge_Office2010Silver,
+.dxWeb_xrdvRibbonIcon_ExportToRtf_Office2010Silver,
+.dxWeb_xrdvRibbonIcon_ExportToRtfLarge_Office2010Silver,
+.dxWeb_xrdvRibbonIcon_ExportToTxt_Office2010Silver,
+.dxWeb_xrdvRibbonIcon_ExportToTxtLarge_Office2010Silver,
+.dxWeb_xrdvRibbonIcon_ExportToXls_Office2010Silver,
+.dxWeb_xrdvRibbonIcon_ExportToXlsLarge_Office2010Silver,
+.dxWeb_xrdvRibbonIcon_ExportToXlsx_Office2010Silver,
+.dxWeb_xrdvRibbonIcon_ExportToXlsxLarge_Office2010Silver
+{
+    background-image: url('DocumentViewerSprite.png');
+    background-repeat: no-repeat;
+    background-color: transparent;
+}
+.dxWeb_xrdvRibbonIcon_BtnFirstPage_Office2010Silver
+{
+    background-position: -68px -149px;
+    width: 16px;
+    height: 16px;
+}
+.dxWeb_xrdvRibbonIcon_BtnFirstPageDisabled_Office2010Silver
+{
+    background-position: -85px -149px;
+    width: 16px;
+    height: 16px;
+}
+.dxWeb_xrdvRibbonIcon_BtnFirstPageLarge_Office2010Silver
+{
+    background-position: -66px 0px;
+    width: 32px;
+    height: 32px;
+}
+.dxWeb_xrdvRibbonIcon_BtnFirstPageLargeDisabled_Office2010Silver
+{
+    background-position: -66px -99px;
+    width: 32px;
+    height: 32px;
+}
+.dxWeb_xrdvRibbonIcon_BtnLastPage_Office2010Silver
+{
+    background-position: -153px -132px;
+    width: 16px;
+    height: 16px;
+}
+.dxWeb_xrdvRibbonIcon_BtnLastPageDisabled_Office2010Silver
+{
+    background-position: -102px -132px;
+    width: 16px;
+    height: 16px;
+}
+.dxWeb_xrdvRibbonIcon_BtnLastPageLarge_Office2010Silver
+{
+    background-position: -165px -33px;
+    width: 32px;
+    height: 32px;
+}
+.dxWeb_xrdvRibbonIcon_BtnLastPageLargeDisabled_Office2010Silver
+{
+    background-position: -132px -99px;
+    width: 32px;
+    height: 32px;
+}
+.dxWeb_xrdvRibbonIcon_BtnNextPage_Office2010Silver
+{
+    background-position: -51px -149px;
+    width: 16px;
+    height: 16px;
+}
+.dxWeb_xrdvRibbonIcon_BtnNextPageDisabled_Office2010Silver
+{
+    background-position: -51px -132px;
+    width: 16px;
+    height: 16px;
+}
+.dxWeb_xrdvRibbonIcon_BtnNextPageLarge_Office2010Silver
+{
+    background-position: -66px -66px;
+    width: 32px;
+    height: 32px;
+}
+.dxWeb_xrdvRibbonIcon_BtnNextPageLargeDisabled_Office2010Silver
+{
+    background-position: 0px -66px;
+    width: 32px;
+    height: 32px;
+}
+.dxWeb_xrdvRibbonIcon_BtnPrevPage_Office2010Silver
+{
+    background-position: -136px -149px;
+    width: 16px;
+    height: 16px;
+}
+.dxWeb_xrdvRibbonIcon_BtnPrevPageDisabled_Office2010Silver
+{
+    background-position: -170px -132px;
+    width: 16px;
+    height: 16px;
+}
+.dxWeb_xrdvRibbonIcon_BtnPrevPageLarge_Office2010Silver
+{
+    background-position: 0px 0px;
+    width: 32px;
+    height: 32px;
+}
+.dxWeb_xrdvRibbonIcon_BtnPrevPageLargeDisabled_Office2010Silver
+{
+    background-position: -198px 0px;
+    width: 32px;
+    height: 32px;
+}
+.dxWeb_xrdvRibbonIcon_BtnPrint_Office2010Silver
+{
+    background-position: -187px -132px;
+    width: 16px;
+    height: 16px;
+}
+.dxWeb_xrdvRibbonIcon_BtnPrintDisabled_Office2010Silver
+{
+    background-position: -119px -132px;
+    width: 16px;
+    height: 16px;
+}
+.dxWeb_xrdvRibbonIcon_BtnPrintLarge_Office2010Silver
+{
+    background-position: 0px -33px;
+    width: 32px;
+    height: 32px;
+}
+.dxWeb_xrdvRibbonIcon_BtnPrintLargeDisabled_Office2010Silver
+{
+    background-position: -165px -99px;
+    width: 32px;
+    height: 32px;
+}
+.dxWeb_xrdvRibbonIcon_BtnPrintPage_Office2010Silver
+{
+    background-position: -34px -149px;
+    width: 16px;
+    height: 16px;
+}
+.dxWeb_xrdvRibbonIcon_BtnPrintPageDisabled_Office2010Silver
+{
+    background-position: -68px -132px;
+    width: 16px;
+    height: 16px;
+}
+.dxWeb_xrdvRibbonIcon_BtnPrintPageLarge_Office2010Silver
+{
+    background-position: -132px 0px;
+    width: 32px;
+    height: 32px;
+}
+.dxWeb_xrdvRibbonIcon_BtnPrintPageLargeDisabled_Office2010Silver
+{
+    background-position: 0px -99px;
+    width: 32px;
+    height: 32px;
+}
+.dxWeb_xrdvRibbonIcon_BtnSave_Office2010Silver
+{
+    background-position: -17px -149px;
+    width: 16px;
+    height: 16px;
+}
+.dxWeb_xrdvRibbonIcon_BtnSaveDisabled_Office2010Silver
+{
+    background-position: -170px -149px;
+    width: 16px;
+    height: 16px;
+}
+.dxWeb_xrdvRibbonIcon_BtnSaveLarge_Office2010Silver
+{
+    background-position: -99px -33px;
+    width: 32px;
+    height: 32px;
+}
+.dxWeb_xrdvRibbonIcon_BtnSaveLargeDisabled_Office2010Silver
+{
+    background-position: -33px 0px;
+    width: 32px;
+    height: 32px;
+}
+.dxWeb_xrdvRibbonIcon_BtnSaveWindow_Office2010Silver
+{
+    background-position: -85px -132px;
+    width: 16px;
+    height: 16px;
+}
+.dxWeb_xrdvRibbonIcon_BtnSaveWindowDisabled_Office2010Silver
+{
+    background-position: 0px -132px;
+    width: 16px;
+    height: 16px;
+}
+.dxWeb_xrdvRibbonIcon_BtnSaveWindowLarge_Office2010Silver
+{
+    background-position: -132px -66px;
+    width: 32px;
+    height: 32px;
+}
+.dxWeb_xrdvRibbonIcon_BtnSaveWindowLargeDisabled_Office2010Silver
+{
+    background-position: -99px 0px;
+    width: 32px;
+    height: 32px;
+}
+.dxWeb_xrdvRibbonIcon_BtnSearch_Office2010Silver
+{
+    background-position: -204px -132px;
+    width: 16px;
+    height: 16px;
+}
+.dxWeb_xrdvRibbonIcon_BtnSearchDisabled_Office2010Silver
+{
+    background-position: -198px -99px;
+    width: 16px;
+    height: 16px;
+}
+.dxWeb_xrdvRibbonIcon_BtnSearchLarge_Office2010Silver
+{
+    background-position: -99px -66px;
+    width: 32px;
+    height: 32px;
+}
+.dxWeb_xrdvRibbonIcon_BtnSearchLargeDisabled_Office2010Silver
+{
+    background-position: -198px -66px;
+    width: 32px;
+    height: 32px;
+}
+.dxWeb_xrdvRibbonIcon_ExportToCsv_Office2010Silver
+{
+    background-position: -136px -132px;
+    width: 16px;
+    height: 16px;
+}
+.dxWeb_xrdvRibbonIcon_ExportToCsvLarge_Office2010Silver
+{
+    background-position: -66px -33px;
+    width: 32px;
+    height: 32px;
+}
+.dxWeb_xrdvRibbonIcon_ExportToHtml_Office2010Silver
+{
+    background-position: -34px -132px;
+    width: 16px;
+    height: 16px;
+}
+.dxWeb_xrdvRibbonIcon_ExportToHtmlLarge_Office2010Silver
+{
+    background-position: -33px -33px;
+    width: 32px;
+    height: 32px;
+}
+.dxWeb_xrdvRibbonIcon_ExportToImg_Office2010Silver
+{
+    background-position: -153px -149px;
+    width: 16px;
+    height: 16px;
+}
+.dxWeb_xrdvRibbonIcon_ExportToImgLarge_Office2010Silver
+{
+    background-position: -99px -99px;
+    width: 32px;
+    height: 32px;
+}
+.dxWeb_xrdvRibbonIcon_ExportToMht_Office2010Silver
+{
+    background-position: -102px -149px;
+    width: 16px;
+    height: 16px;
+}
+.dxWeb_xrdvRibbonIcon_ExportToMhtLarge_Office2010Silver
+{
+    background-position: -165px 0px;
+    width: 32px;
+    height: 32px;
+}
+.dxWeb_xrdvRibbonIcon_ExportToPdf_Office2010Silver
+{
+    background-position: 0px -149px;
+    width: 16px;
+    height: 16px;
+}
+.dxWeb_xrdvRibbonIcon_ExportToPdfLarge_Office2010Silver
+{
+    background-position: -165px -66px;
+    width: 32px;
+    height: 32px;
+}
+.dxWeb_xrdvRibbonIcon_ExportToRtf_Office2010Silver
+{
+    background-position: -17px -132px;
+    width: 16px;
+    height: 16px;
+}
+.dxWeb_xrdvRibbonIcon_ExportToRtfLarge_Office2010Silver
+{
+    background-position: -33px -66px;
+    width: 32px;
+    height: 32px;
+}
+.dxWeb_xrdvRibbonIcon_ExportToTxt_Office2010Silver
+{
+    background-position: -119px -149px;
+    width: 16px;
+    height: 16px;
+}
+.dxWeb_xrdvRibbonIcon_ExportToTxtLarge_Office2010Silver
+{
+    background-position: -33px -99px;
+    width: 32px;
+    height: 32px;
+}
+.dxWeb_xrdvRibbonIcon_ExportToXls_Office2010Silver
+{
+    background-position: -187px -149px;
+    width: 16px;
+    height: 16px;
+}
+.dxWeb_xrdvRibbonIcon_ExportToXlsLarge_Office2010Silver
+{
+    background-position: -132px -33px;
+    width: 32px;
+    height: 32px;
+}
+.dxWeb_xrdvRibbonIcon_ExportToXlsx_Office2010Silver
+{
+    background-position: -215px -99px;
+    width: 16px;
+    height: 16px;
+}
+.dxWeb_xrdvRibbonIcon_ExportToXlsxLarge_Office2010Silver
+{
+    background-position: -198px -33px;
+    width: 32px;
+    height: 32px;
+}
+
