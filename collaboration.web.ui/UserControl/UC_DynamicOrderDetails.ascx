@@ -159,17 +159,17 @@
         //$(".removeButton").addClass("ajaxRemoveButton").removeClass("removeButton");
 
     }
-
-
+    $(document).ready(function () {
+        // Move the table's first row to a thead
+        $(".display tbody tr:first-child").each(function () {
+            $(this).closest("table").prepend("<thead></thead>").children("thead").append($(this).remove());
+        });
+        $('#MainContent_DynamicOrderDetails_gvTable').DataTable();
+    });
 </script>
-
-
-
-
 <asp:UpdatePanel ID="updDynamicDetails" runat="server" UpdateMode="Conditional">
     <ContentTemplate>
-        <input type="text" runat="server" id="txtRole" style="display:none"/>
-        
+        <input type="text" runat="server" id="txtRole" style="display: none" />
         <asp:Button ID="btn" runat="server" OnClick="btnAddCAD_Click" Style="display: none;" />
         <div class="row">
             <div class="col-lg-12">
@@ -235,7 +235,7 @@
                                         OnClientUploadStarted="uploadEStarted" OnClientUploadComplete="UploadCompleted" />--%>
 
                                     <input type="file" id="cadfile" style="display: none" name="cadfile" class="multi {accept:'gif|jpg', max:3, STRING:{ remove:'Remover', selected:'Selecionado: $file', denied:'Invalid $ext!', duplicate:'Duplicate:\n$file!' }}" />
-                                    
+
                                     <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Upload" Style="display: none" />
                                     <ajax:AjaxFileUpload ID="specimenFileUpload" runat="server" AllowedFileTypes="jpg,jpeg,png,gif"
                                         OnUploadComplete="File_Upload" OnClientUploadComplete="uploadComplete" Width="40%" Style="display: none" />
@@ -253,7 +253,7 @@
                                 <div class="col-lg-8">
                                     <asp:GridView ID="gvTable" runat="server" AutoGenerateColumns="False" AllowSorting="True"
                                         Width="100%" OnRowDataBound="gvTable_RowDataBound" EmptyDataText="No Recods Found"
-                                        OnRowCommand="gvTable_RowCommand" CssClass="table">
+                                        OnRowCommand="gvTable_RowCommand" CssClass="display table myTable">
                                         <Columns>
                                             <asp:TemplateField HeaderText="Order Serial Number" HeaderStyle-ForeColor="#797979">
                                                 <ItemTemplate>
